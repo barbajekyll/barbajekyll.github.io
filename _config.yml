@@ -69,5 +69,5 @@ exclude:
 - CNAME
 - icomoon-selection.json
 - readme.md
-# include:
-# - node_modules
+include:
+- node_modules
