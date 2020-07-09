@@ -1,3 +1,11 @@
+# Useful resources
+
+- https://jekyllrb.com/docs/configuration/default/
+- https://github.com/jekyllresources/webpack-require-from
+- https://webpack.js.org/guides/public-path/
+- https://github.com/webpack/docs/wiki/configuration#outputpublicpath
+- https://michaelmovsesov.com/articles/jekyll-es6-workflow
+
 # Jekyll docs site
 
 This directory contains the code for the Jekyll docs site, [jekyllrb.com](https://jekyllrb.com/).
