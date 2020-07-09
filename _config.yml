@@ -1,0 +1,73 @@
+---
+version: 4.1.0
+name: Jekyll • Simple, blog-aware, static sites
+description: Transform your plain text into static websites and blogs
+url: https://jekyllresources.github.io/barbajekyll
+repository: https://github.com/jekyllresources/barbajekyll
+# baseurl: barbajekyll
+# source: ./barbajekyll
+timezone: America/Los_Angeles
+lang: en-US
+twitter:
+  username: jekyllrb
+logo: "/img/logo-2x.png"
+google_analytics_id:
+google_analytics_name_id:
+google_tag_id: UA-86331249-1
+google_site_verification:
+collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+  posts:
+    permalink: "/news/:year/:month/:day/:title/"
+    output: true
+  tutorials:
+    permalink: "/:collection/:path/"
+    output: true
+defaults:
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: news_item
+- scope:
+    path: _tutorials
+    type: tutorials
+  values:
+    layout: tutorials
+- scope:
+    path: ''
+  values:
+    image: "/img/jekyll-og.png"
+future: true
+plugins:
+- jekyll-avatar
+- jekyll-feed
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-seo-tag
+- jekyll-sitemap
+- jemoji
+feed:
+  categories:
+  - release
+kramdown:
+  syntax_highlighter_opts:
+    default_lang: plaintext
+sass:
+  style: compressed
+strict_front_matter: true
+exclude:
+- ".gitignore"
+- ".jekyll-cache"
+- CNAME
+- icomoon-selection.json
+- readme.md
+include:
+- node_modules
