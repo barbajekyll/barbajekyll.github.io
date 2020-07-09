@@ -60,12 +60,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jekyllresources/barbajekyll.git"
+    "url": "git+https://github.com/barbajekyll/barbajekyll.github.io.git"
   },
   "author": "Antonio Trento",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jekyllresources/barbajekyll/issues"
+    "url": "https://github.com/barbajekyll/barbajekyll.github.io/issues"
   },
-  "homepage": "https://github.com/jekyllresources/barbajekyll#readme"
+  "homepage": "https://github.com/barbajekyll/barbajekyll.github.io#readme"
 }
