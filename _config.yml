@@ -2,8 +2,8 @@
 version: 4.1.0
 name: Jekyll • Simple, blog-aware, static sites
 description: Transform your plain text into static websites and blogs
-url: https://jekyllresources.github.io/barbajekyll
-repository: https://github.com/jekyllresources/barbajekyll
+url: https://barbajekyll.github.io
+repository: https://github.com/barbajekyll/barbajekyll.github.io
 # baseurl: barbajekyll
 # source: ./barbajekyll
 timezone: America/Los_Angeles
