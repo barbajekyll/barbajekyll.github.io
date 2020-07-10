@@ -1,3 +1,10 @@
+# To do
+
+- [ ] implementare documentazione
+- [ ] implementare blog
+- [ ] implementa ecommerce
+- [ ] implementa wordpress in background su jekyll
+
 # Useful resources
 
 - https://jekyllrb.com/docs/configuration/default/
