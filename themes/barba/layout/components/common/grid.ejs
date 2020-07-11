@@ -1,0 +1,7 @@
+<ol class="grid" data-component="<%- name %>-grid">
+  <% if (namespace === 'examples') { %>
+    <% site.categories.findOne({name: 'examples'}).posts.forEach(function(post){ %>
+      <%- partial('components/examples/example-item.ejs', { post: post }) %>
+    <% }); %>
+  <% } %>
+</ol>

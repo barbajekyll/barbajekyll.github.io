@@ -1,0 +1,13 @@
+<section class="docs">
+  <div class="docs__page-transition"></div>
+
+  <%- partial('./docs-nav') %>
+  <%- partial('./docs-content') %>
+
+  <%- partial('./docs-nav-lateral',
+    {
+      page: page,
+    }
+  ) %>
+
+</section>

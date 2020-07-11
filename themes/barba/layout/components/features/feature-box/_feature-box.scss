@@ -1,0 +1,121 @@
+/* stylelint-disable selector-max-combinators, selector-max-compound-selectors, max-nesting-depth, no-descending-specificity */
+.feature-box {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 85vw;
+  margin-top: 10rem;
+  background: rgba($white, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 1.4rem 3rem rgba($gray-light, 0.3);
+  transform: translateX(-50%);
+
+  @include mq(l) {
+    top: initial;
+    bottom: 1rem;
+    width: 80rem;
+    margin-top: 0;
+  }
+
+  @include mq(xxxl) {
+    bottom: 10rem;
+  }
+}
+
+.feature-box__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 3rem;
+
+  @include mq(l) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3rem;
+    padding: 4rem;
+  }
+}
+
+.feature-box__column,
+[class*='feature-box__column--'] {
+  @include mq($until: l) {
+    & + & {
+      margin-top: 2rem;
+    }
+  }
+
+  &[class*='two'] {
+    grid-column: span 2;
+
+    @include mq($until: l) {
+      display: flex;
+      flex-wrap: wrap;
+      grid-column: span 4;
+    }
+  }
+
+  &[class*='three'] {
+    grid-column: span 3;
+  }
+
+  &[class*='four'] {
+    grid-column: span 4;
+  }
+}
+
+.feature-box__column__icon,
+[class*='feature-box__column__icon--'] {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 1rem 1rem 0;
+
+  @include mq(l) {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &[class*='big'] {
+    // display: none;
+    width: 18rem;
+    height: 13rem;
+    margin: 0 auto;
+
+    @include mq(l) {
+      display: block;
+      width: 18rem;
+      height: 13rem;
+    }
+  }
+
+  .partial-image {
+    object-fit: contain;
+  }
+}
+
+.feature-box__body__title {
+  margin: 0;
+  font-family: $ff-alt;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.feature-box__body__text {
+  margin: 1rem 0;
+  font-size: 1.4rem !important; //stylelint-disable-line declaration-no-important
+  line-height: 1.5 !important; //stylelint-disable-line declaration-no-important
+
+  @include mq(l) {
+    margin: 0;
+    font-size: 1.6rem !important; //stylelint-disable-line declaration-no-important
+  }
+}
+
+.feature-box__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-top: 0.1px solid $gray-lighter;
+}

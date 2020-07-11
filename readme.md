@@ -1,5 +1,7 @@
 # To do
 
+- [ ] Modificare il destinatarion del form di inserimento nella pagina /showcase/
+- [ ] Capire come modificare la label della la transizione basica (mostra sempre il testo home dovunque si navighi)
 - [ ] implementare documentazione
 - [ ] implementare blog
 - [ ] implementa ecommerce

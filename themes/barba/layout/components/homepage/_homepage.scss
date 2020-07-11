@@ -1,0 +1,163 @@
+.homepage {
+  @include get-all-space;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  text-align: center;
+
+  .logo {
+    max-width: 57rem;
+    margin: 0 auto;
+  }
+}
+
+.homepage__logo-outer {
+  position: relative;
+  width: 100%;
+
+  @include mq($until: m) {
+    .logo.only-big {
+      padding: 2rem 0;
+    }
+  }
+}
+
+.homepage__logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // transform: scale(0.7);
+
+  @include mq($until: m) {
+    padding: 2rem 0;
+  }
+
+  .to-feature & {
+    z-index: -1;
+  }
+}
+
+.homepage .logo.only-big {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  // transform: scale(0.7);
+
+  .base,
+  .links {
+    display: none;
+  }
+
+  .to-feature & {
+    position: static;
+  }
+}
+
+.homepage__title {
+  max-width: 65rem;
+  margin: 0;
+  margin-bottom: 2rem;
+  font-family: $ff-alt;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+
+  @include mq(s) {
+    width: 80%;
+    font-size: 2.5rem;
+  }
+
+  .line {
+    overflow: hidden;
+  }
+
+  span {
+    display: inline-block;
+  }
+}
+
+.homepage__list {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  margin: 3rem 0;
+  padding: 0;
+
+  div {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+  }
+}
+
+.homepage__list__item,
+[class*='homepage__list__item--'] {
+  display: block;
+  width: 100%;
+  font-family: $ff-alt;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.9);
+
+  @include mq(s) {
+    font-size: 3rem;
+  }
+
+  @include mq(m) {
+    font-size: 4rem;
+  }
+
+  &[class*='--0'] {
+    color: $c-menu-feature-0;
+  }
+
+  &[class*='--1'] {
+    color: $c-menu-feature-1;
+  }
+
+  &[class*='--2'] {
+    color: $c-menu-feature-2;
+  }
+
+  &[class*='--3'] {
+    color: $c-menu-feature-3;
+  }
+
+  &[class*='--4'] {
+    color: $c-menu-feature-4;
+  }
+
+  &[class*='--5'] {
+    color: $c-menu-feature-5;
+  }
+
+  &:first-child {
+    position: relative;
+  }
+}
+
+.homepage__buttons {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(m) {
+    flex-direction: row;
+
+    .button + .button {
+      margin-left: 2rem;
+    }
+  }
+
+  .button {
+    margin-top: 1rem;
+    border-radius: 10rem;
+  }
+}

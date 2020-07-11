@@ -1,0 +1,18 @@
+<div class="showcase-cta" data-component="showcase-cta">
+  <button class="showcase-cta__button cta">
+    <div class="showcase-cta__button-inner">
+      <div class="showcase-cta__button__pulse"></div>
+    </div>
+    <figcaption class="showcase-cta__button__caption">
+      <span class="showcase-cta__button__subtitle">Submit</span>
+      <span class="showcase-cta__button__title">website</span>
+    </figcaption>
+  </button>
+
+  <!-- Modal with a form onButtonClick -->
+  <%- partial('components/showcase/modal', { content:
+  partial('components/showcase/form', { loader:
+  partial('components/showcase/spinner'), feedback:
+  partial('components/showcase/showcase-feedback'), }), }) %>
+  <!-- Modal with a form onButtonClick [end]-->
+</div>

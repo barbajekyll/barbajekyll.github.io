@@ -1,0 +1,34 @@
+<div class="homepage" data-component="homepage">
+  <div class="homepage__logo-outer" data-ref="homepage.container">
+    <%- partial('components/common/logo.ejs', { classes: 'homepage__logo' }) %>
+    <%- partial('components/common/logo.ejs', { classes: 'only-big' }) %>
+  </div>
+
+  <ul class="homepage__list" data-ref="homepage.list">
+    <% var features = theme.menu[0].subpages %>
+    <li class="homepage__list__item--0" data-ref="homepage.listItem">
+      <%- features[0].title %>
+    </li>
+    <div>
+      <% features.forEach(function(feature, index) { %>
+        <% if(index > 0) { %>
+          <li class="homepage__list__item--<%- index %>" data-ref="homepage.listItem">
+            <%- feature.title %>
+          </li>
+        <% }; %>
+      <% }); %>
+    </div>
+  </ul>
+
+  <h1 class="homepage__title">
+    <div class="line">
+      <span>Create badass fluid and smooth transitions</span>
+    </div>
+    <div class="line"><span>between your website’s pages.</span></div>
+  </h1>
+
+  <div class="homepage__buttons">
+    <a href="<%- theme.root %><%- features[0].url %>" class="button">features 💪</a>
+    <a href="<%- theme.docs[0].url %>" class="button button--fill">Documentation 📖</a>
+  </div>
+</div>

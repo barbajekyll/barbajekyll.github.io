@@ -1,0 +1,165 @@
+// Side nav
+
+.docs__nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  padding: 14rem 0;
+  background: $c-blue-lightest;
+  transition: transform 0.3s $ease-out-quad;
+
+  @include mq(m) {
+    right: unset;
+    width: 25vw;
+  }
+
+  @include mq($until: m) {
+    transform: translateX(-100%);
+
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+
+  &::before {
+    content: '';
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 14rem;
+    background: $c-blue-lightest;
+  }
+}
+
+.docs__nav__list {
+  display: block;
+  overflow: auto;
+  margin-left: 1rem;
+  padding: 0;
+  list-style: none;
+
+  @include mq(s) {
+    margin-left: 5rem;
+  }
+
+  @include mq(l) {
+    margin: 0 12%;
+  }
+
+  & > li {
+    border-bottom: 1px solid rgba($black, 0.1);
+
+    a {
+      color: $gray-darker;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.docs__nav__title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2rem;
+  text-transform: uppercase;
+  opacity: 0.3;
+  transition: opacity 450ms ease;
+
+  @include mq(s) {
+    font-size: 1.2rem;
+  }
+
+  @include mq(l) {
+    font-size: 1.5rem;
+  }
+
+  &.is-open {
+    opacity: 0.7;
+  }
+
+  &:hover:not(.is-open) {
+    opacity: 0.5;
+    transition-duration: 250ms;
+  }
+}
+
+.docs__nav__sublist {
+  overflow: hidden;
+  height: 0;
+  margin: 0;
+  padding-left: 1rem;
+  list-style: none;
+
+  @include mq(s) {
+    padding-left: 2rem;
+  }
+
+  @include mq(l) {
+    padding-left: 3rem;
+  }
+
+  li {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0.5em;
+      left: -1em;
+      width: 0;
+      height: 0;
+      border-width: 0.35em 0 0.35em 0.45em;
+      border-style: solid;
+      border-color: transparent $c-blue-light;
+      opacity: 0;
+      transition: opacity 450ms ease;
+
+      @include mq(l) {
+        top: calc(50% - 0.35em);
+      }
+    }
+
+    &.is-open {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.is-open {
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+.docs__nav__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  transition: color 450ms ease;
+
+  @include mq(s) {
+    font-size: 1.2rem;
+  }
+
+  @include mq(l) {
+    font-size: 1.5rem;
+  }
+
+  &.is-open {
+    color: $c-blue-light;
+  }
+
+  &:hover:not(.is-open) {
+    color: $c-blue-light;
+    transition-duration: 250ms;
+  }
+}

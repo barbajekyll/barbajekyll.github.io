@@ -1,0 +1,86 @@
+// Lateral nav
+
+.docs__nav__lateral {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @include mq($until: l) {
+    margin-bottom: 6rem;
+  }
+
+  @include mq(m) {
+    width: 74vw;
+    margin-bottom: 6rem;
+    margin-left: 25vw;
+  }
+
+  @include mq(l) {
+    min-width: 50vw;
+    max-width: 80rem;
+    padding: 0 6rem;
+  }
+
+  .icon--barba {
+    width: 15px;
+    height: 15px;
+    margin-left: 1rem;
+    stroke: $c-menu-feature-5;
+    fill: $c-menu-feature-5;
+  }
+}
+
+.docs__nav__lateral__button {
+  @extend %button-nostyle;
+
+  display: flex;
+  width: 100%;
+  margin: 2rem;
+  color: $c-menu-feature-5;
+  font-family: $ff-alt;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  @include mq(m) {
+    display: none;
+  }
+}
+
+.docs__nav__lateral__label {
+  margin: 1rem;
+}
+
+.docs__nav__lateral__link,
+[class*='docs__nav__lateral__link--'] {
+  @extend %text-uppercase;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 25%;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  color: $c-menu-feature-5;
+  font-family: $ff-alt;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: rgba($c-menu-feature-5-light, 0.2);
+  border-radius: 5rem;
+  transition: 0.2s $ease-out-quad;
+  transition-property: color, background-color;
+
+  @include mq(s) {
+    &:hover {
+      color: $white;
+      background: $c-blue-light;
+
+      svg {
+        fill: $white;
+        stroke: $white;
+      }
+    }
+  }
+}

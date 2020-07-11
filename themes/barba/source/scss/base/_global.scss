@@ -1,0 +1,70 @@
+//Avoid typekit FOUT
+html {
+  &.js {
+    opacity: 0;
+    // transition: opacity .3s ease-in-out;
+
+    &.wf-active,
+    &.wf-inactive,
+    &.ready {
+      opacity: 1;
+    }
+  }
+}
+
+body {
+  overflow-x: hidden;
+
+  &.prevent-scroll {
+    overflow: hidden;
+    height: 100vh;
+    margin-left: calc(100vw - 100%);
+  }
+}
+
+// SVG sprite
+body > svg {
+  display: none;
+}
+
+// RWD
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+html.is-transitioning {
+  &,
+  * {
+    pointer-events: none;
+    cursor: progress;
+  }
+}
+
+.site-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.site-content-inner {
+  @include owl;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  &[data-barba-namespace='docs'] {
+    display: block;
+    padding: 0;
+  }
+}

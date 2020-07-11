@@ -1,0 +1,21 @@
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Source+Code+Pro:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
+html {
+  font-size: calc(1em * 0.625);
+}
+
+body {
+  /* sass-lint:disable-block no-vendor-prefixes */
+  font: 300 1.3rem / 1.65 $ff-default;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  @include mq(m) {
+    font: 300 1.6rem / 1.65 $ff-default;
+  }
+
+  @include mq(l) {
+    font: 300 1.8rem / 1.65 $ff-default;
+  }
+}
