@@ -11,9 +11,27 @@
 
 # Errori
 
+## Google chrome developer tools
+
+- https://www.google.com/search?q=chrome+web+developer+show+the+attributes+of+a+javascript+class&oq=chrome+web+developer+show+the+attributes+of+a+javascript+class&aqs=chrome..69i57.21595j0j7&sourceid=chrome&ie=UTF-8
+- https://developers.google.com/web/tools/chrome-devtools/dom
+- https://developers.google.com/web/tools/chrome-devtools/javascript
+- https://stackoverflow.com/questions/2934787/view-list-of-all-javascript-variables-in-google-chrome-console#:~:text=In%20Firebug%2C%20the%20DOM%20tab,object%20you%20want%20to%20explore.
+- https://www.google.com/search?sxsrf=ALeKk014b6F2Pb_SfUXZhXZZosMwKnDzwQ%3A1594495979827&ei=6xMKX9-NMr2BhbIPrc66sAY&q=show+address+where+javascript+take+a+vaue&oq=show+address+where+javascript+take+a+vaue&gs_lcp=CgZwc3ktYWIQAzIHCCEQChCgATIECCEQFToHCAAQRxCwAzoLCC4QsQMQgwEQkwI6CAgAELEDEIMBOggILhCxAxCDAToFCAAQsQM6BAgAEEM6AggAOgQIIxAnOgcILhAUEIcCOgUILhCxAzoHCAAQsQMQQzoCCC46BwgAEBQQhwI6BwguEAoQywE6BQgAEMsBOgUILhDLAToICC4QywEQkwI6BggAEBYQHjoICAAQFhAKEB46CAghEBYQHRAeOgUIIRCgAVD7iS5Y3tEvYPzTL2gCcAB4BoAB2xSIAbuNAZIBEDEuMjcuMy40LjIuMy45LTSYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwifr-Sz-MXqAhW9QEEAHS2nDmYQ4dUDCAw&uact=5
+- https://javascript.info/keys-values-entries
+-
+
 ## gsap
 
 - https://greensock.com/forums/topic/22491-gsap3-target-object-not-found/
+
+## webpack undertanding
+
+- https://www.google.com/search?q=show+address+where+webpack+take+data&oq=show+address+where+webpack+take+data&aqs=chrome..69i57j33.24133j0j7&sourceid=chrome&ie=UTF-8
+- https://webpack.js.org/concepts/entry-points/
+- https://stackoverflow.com/questions/28846814/what-does-publicpath-in-webpack-do
+- https://webpack.js.org/guides/public-path/
+-
 
 # Useful resources
 

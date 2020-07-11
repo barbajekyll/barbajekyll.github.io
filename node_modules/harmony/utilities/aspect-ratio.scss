@@ -1,0 +1,20 @@
+/*
+ * Apply an aspect ratio to an element that's retained when resized.
+ *
+ * Usage:
+ * @include aspect-ratio(16, 9); // Most common television/monitor ratio
+ * @include aspect-ratio(1.85, 1); // Widescreen film ratio
+ * @include aspect-ratio(4, 3); // Old style television/monitor ratio
+ * @include aspect-ratio; // Square
+ */
+
+@mixin aspect-ratio($width: 1, $height: 1) {
+    @include child-fill-parent;
+    padding-bottom: $height / $width * 100%;
+
+    & > * {
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+    }
+}

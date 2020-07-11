@@ -1,0 +1,16 @@
+/*
+ * Expand a child element to the size of its parent.
+ */
+
+@mixin child-fill-parent {
+    display: block;
+    position: relative;
+
+    & > * {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}

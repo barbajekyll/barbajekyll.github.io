@@ -1,0 +1,103 @@
+@mixin type-base {
+    @include typeset(
+        $font-family: "Inter",
+        $size: 18,
+        $line-height: 3,
+        $above: -2,
+        $below: 6
+    );
+}
+
+@mixin type-a {
+    font-weight: bold;
+    @include typeset(
+        $font-family: "Inter",
+        $size: 64,
+        $line-height: 3,
+        $below: 8
+    );
+
+    @media (max-width: map-get($breakpoints, "md")) {
+        @include typeset(
+            $font-family: "Inter",
+            $size: 48,
+            $line-height: 3,
+            $below: 2
+        );
+    }
+}
+
+@mixin type-b {
+    font-weight: bold;
+    @include typeset(
+        $font-family: "Inter",
+        $size: 32,
+        $line-height: 2,
+        $below: 3
+    );
+
+    @media (max-width: map-get($breakpoints, "lg")) {
+        @include typeset(
+            $font-family: "Inter",
+            $size: 32,
+            $line-height: 2,
+            $below: 3
+        );
+    }
+}
+
+@mixin type-c {
+    font-weight: bold;
+
+    @include typeset(
+        $font-family: "Inter",
+        $size: 24,
+        $line-height: 2,
+        $below: 3
+    );
+
+    @media (max-width: map-get($breakpoints, "lg")) {
+        @include typeset(
+            $font-family: "Inter",
+            $size: 24,
+            $line-height: 3,
+            $below: 3
+        );
+    }
+}
+
+@mixin type-d {
+    @include typeset(
+        $font-family: "Inter",
+        $size: 12,
+        $line-height: 1,
+        $below: 2
+    );
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@mixin wysiwyg {
+    h1 {
+        @include type-a;
+    }
+
+    h2 {
+        @include type-b;
+    }
+
+    h3 {
+        @include type-c;
+        font-weight: bold;
+    }
+
+    h4 {
+        margin-top: 1rem;
+        @include type-d;
+    }
+
+    p {
+        @include type-base;
+    }
+}

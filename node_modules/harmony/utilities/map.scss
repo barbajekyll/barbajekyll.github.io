@@ -1,0 +1,127 @@
+// Map Validators
+
+@function is-valid-property-map($map) {
+    @return $map != null and type-of($map) == 'map' and length($map) > 0 and
+        map-keys-correspond-to-keys-in-other-map($map, $breakpoints);
+}
+
+@function maps-have-same-keys($map1, $map2) {
+    @if (not map-keys-correspond-to-keys-in-other-map($map1, $map2)) {
+        @return false;
+    }
+
+    @if (not map-keys-correspond-to-keys-in-other-map($map2, $map1)) {
+        @return false;
+    }
+
+    @return true;
+}
+
+@function map-keys-correspond-to-keys-in-other-map($map1, $map2) {
+    @each $key, $value in $map1 {
+        @if (not map-has-key($map2, $key)) {
+            @return false;
+        }
+    }
+    @return true;
+}
+
+@function validate-property-map($map) {
+    @if (not is-valid-property-map($map)) {
+        @error '#{$map} must be a valid property map whose keys correspond to keys in $breakpoints #{map-keys($breakpoints)}.';
+    }
+
+    @return true;
+}
+
+// Map Operators
+
+@function map-add($map1, $map2) {
+    $output: ();
+
+    @if (not maps-have-same-keys($map1, $map2)) {
+        @error ('In order to perform an add operation on two maps, both must have the same set of keys.');
+    }
+
+    @each $key, $value in $map1 {
+        $output: map-merge(
+            $output,
+            (
+                $key: $value + map-get($map2, $key),
+            )
+        );
+    }
+
+    @return $output;
+}
+
+@function map-subtract($map1, $map2) {
+    $output: ();
+
+    @if (not maps-have-same-keys($map1, $map2)) {
+        @error ('In order to perform an add operation on two maps, both must have the same set of keys.');
+    }
+
+    @each $key, $value in $map1 {
+        $output: map-merge(
+            $output,
+            (
+                $key: $value - map-get($map2, $key),
+            )
+        );
+    }
+
+    @return $output;
+}
+
+@function map-multiply($map, $multiplier) {
+    $output: ();
+
+    @each $key, $value in $map {
+        $output: map-merge(
+            $output,
+            (
+                $key: $value * $multiplier,
+            )
+        );
+    }
+
+    @return $output;
+}
+
+@function map-strip-unit($map) {
+    $output: ();
+
+    @each $key, $value in $map {
+        $output: map-merge(
+            $output,
+            (
+                $key: strip-unit($value),
+            )
+        );
+    }
+
+    @return $output;
+}
+
+@function map-percentage($map) {
+    $output: ();
+
+    @each $key, $value in $map {
+        @if (type-of($value) != 'number') {
+            @error ('Values passed to map-percentage (#{$value}) must be a number.');
+        }
+
+        $output: map-merge(
+            $output,
+            (
+                $key: percentage($value),
+            )
+        );
+    }
+
+    @return $output;
+}
+
+// TODO multiply maps by maps, assert same keys using validator
+// TODO add maps to maps, assert same keys using validator

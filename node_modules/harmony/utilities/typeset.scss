@@ -1,0 +1,47 @@
+@import './highlight-helper';
+/*
+ * Typeset
+ */
+
+@mixin typeset($font-family, $size, $line-height, $above: 0, $below: 0) {
+    // TODO accept maps for font-family, size, line-height and below
+    line-height: #{$line-height}rem;
+    $cap-height: map-get($cap-heights, $font-family);
+
+    @include highlight-helper(
+        'Typeset',
+        $colour-baseline-grid,
+        '.show-baselines'
+    );
+
+    @if (not $cap-height) {
+        @error ('cap-height metric for #{ $font-family } must be defined in $cap-heights.');
+    }
+
+    font-family: $font-family;
+
+    $rootsize: 16; // This is the base grid unit we use in Figma.
+    $baseline-shift: #{(
+            $size / 2 * (($line-height * $rootsize / $size) - $cap-height)
+        ) / $rootsize + 0.00001};
+    $baseline-push: #{$below -
+        (
+            ($size / 2 * (($line-height * $rootsize / $size) - $cap-height)) /
+                $rootsize + 0.00001
+        )};
+
+    font-size: #{$size / $rootsize}rem;
+    margin-top: $above * 1rem;
+    margin-bottom: #{$baseline-push}rem;
+    padding-top: #{$baseline-shift}rem;
+
+    html.show-baselines & {
+        background-image: linear-gradient(
+            $colour-baseline-grid 0,
+            transparent 1px
+        );
+        background-repeat: repeat-y;
+        background-size: 100% 1rem;
+        background-position: 0 #{- $above}rem;
+    }
+}

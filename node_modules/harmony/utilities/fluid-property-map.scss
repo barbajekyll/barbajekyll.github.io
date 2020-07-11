@@ -1,0 +1,60 @@
+@import './map';
+@import './fluid-property';
+
+/*
+ * Short description goes here.
+ *
+ * Usage:
+ * @include ...
+ */
+@mixin fluid-property-map($property: null, $values: null, $multiplier: 1) {
+    $test: validate-property-map($values);
+
+    $selected-breakpoint-ids: map-keys($values);
+    $selected-breakpoint-values: map-values($values);
+
+    @if (not unitless($multiplier) or type-of($multiplier) != 'number') {
+        @error ('Multiplier must be a unitless numeric value.');
+    }
+
+    @if ($property == null) {
+        @error 'Property must be specified.';
+    }
+
+    @if ($values == null) {
+        @error 'Value must be specified.';
+    }
+
+    @for $i from 1 through length($selected-breakpoint-ids) - 1 {
+        $is-last: $i == length($selected-breakpoint-ids) - 1;
+        $is-first: $i == 1;
+
+        $min-value: strip-unit(nth($selected-breakpoint-values, $i));
+        $max-value: strip-unit(nth($selected-breakpoint-values, $i + 1));
+
+        $min-breakpoint-id: nth($selected-breakpoint-ids, $i);
+        $max-breakpoint-id: nth($selected-breakpoint-ids, $i + 1);
+
+        $min-breakpoint: strip-unit(map-get($breakpoints, $min-breakpoint-id));
+        $max-breakpoint: strip-unit(map-get($breakpoints, $max-breakpoint-id));
+
+        @if ($max-breakpoint == null) {
+            @error 'The value "#{$max-breakpoint-id}" doesn\'t correspond to a breakpoint defined in $breakpoints.';
+        }
+
+        @if ($min-breakpoint == null) {
+            @error 'The value "#{$min-breakpoint-id}" doesn\'t correspond to a breakpoint defined in $breakpoints.';
+        }
+
+        @include fluid-property(
+            $property: $property,
+            $min-value: $min-value,
+            $max-value: $max-value,
+            $min-breakpoint: $min-breakpoint,
+            $max-breakpoint: $max-breakpoint,
+            $apply-above: $is-last,
+            $apply-below: $is-first,
+            $multiplier: $multiplier
+        );
+    }
+}

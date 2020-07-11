@@ -1,0 +1,63 @@
+@import './map';
+
+@mixin property-map($property, $values) {
+    @if ($property == null) {
+        @error 'Property must be specified.';
+    }
+
+    $test: validate-property-map($values);
+
+    $selected-breakpoint-ids: map-keys($values);
+    $selected-breakpoint-values: map-values($values);
+
+    @if (length($selected-breakpoint-values) == 1) {
+        // If only one value was passed to this mixin - which isn't really the way
+        // it's intended to be used - nothing needs to be done other than setting
+        // a single value for all breakpoints.
+        #{$property}: nth($selected-breakpoint-values, 1);
+    } @else {
+        @for $i from 1 through length($values) - 1 {
+            $is-last: $i == length($values) - 1;
+            $is-first: $i == 1;
+
+            $min-value: nth($selected-breakpoint-values, $i);
+            $max-value: nth($selected-breakpoint-values, $i + 1);
+
+            $max-breakpoint-id: nth($selected-breakpoint-ids, $i + 1);
+            $min-breakpoint-id: nth($selected-breakpoint-ids, $i);
+
+            $min-breakpoint: strip-unit(
+                map-get($breakpoints, $min-breakpoint-id)
+            );
+
+            $max-breakpoint: strip-unit(
+                map-get($breakpoints, $max-breakpoint-id)
+            );
+
+            @if ($max-breakpoint == null) {
+                @error 'The value "#{$max-breakpoint-id}" doesn\'t correspond to a breakpoint defined in $breakpoints.';
+            }
+
+            @if ($min-breakpoint == null) {
+                @error 'The value "#{$min-breakpoint-id}" doesn\'t correspond to a breakpoint defined in $breakpoints.';
+            }
+
+            // TODO support single breakpoint passed.
+            @if $is-first {
+                @media (max-width: #{$min-breakpoint - 1}px) {
+                    #{$property}: $min-value;
+                }
+            }
+
+            @media (min-width: #{$min-breakpoint}px) and (max-width: #{$max-breakpoint - 1}px) {
+                #{$property}: $min-value;
+            }
+
+            @if $is-last {
+                @media (min-width: #{$max-breakpoint}px) {
+                    #{$property}: $max-value;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import './map';
+
+// =============================================================================
+// Fluid Property
+// =============================================================================
+
+/*
+ * Short description goes here.
+ *
+ * Usage:
+ * @include ...
+ */
+
+@mixin fluid-property(
+    $property,
+    $min-value,
+    $max-value,
+    $min-breakpoint,
+    $max-breakpoint,
+    $apply-below: true,
+    $apply-above: true,
+    $multiplier: 1
+) {
+    @if (not unitless($min-breakpoint)) {
+        @error '$min-breakpoint must be unitless.';
+    }
+
+    @if (not unitless($max-breakpoint)) {
+        @error '$max-breakpoint must be unitless.';
+    }
+
+    $min-value: $min-value * $multiplier;
+    $max-value: $max-value * $multiplier;
+
+    $difference: ($max-value - $min-value) / ($max-breakpoint - $min-breakpoint) *
+        100vw;
+    $adder: ($min-value * $max-breakpoint - $max-value * $min-breakpoint) /
+        ($max-breakpoint - $min-breakpoint) + 0px;
+    $min-breakpoint: $min-breakpoint + 0px;
+    $max-breakpoint: $max-breakpoint + 0px;
+
+    // If $apply-below is true, the lower value will also apply below the $min-breakpoint breakpoint.
+    @if $apply-below {
+        @media (max-width: #{$min-breakpoint}) {
+            #{$property}: #{$min-value}px;
+        }
+    }
+
+    // If $apply-above is true, the higher value will also apply above the $max-breakpoint breakpoint.
+    @if $apply-above {
+        @media (min-width: #{$max-breakpoint - 1}) {
+            #{$property}: #{$max-value}px;
+        }
+    }
+
+    // Apply the tween calculation from the $min-breakpoint to $max-breakpoint breakpoints.
+    @media (min-width: #{$min-breakpoint}) and (max-width: #{$max-breakpoint - 1}) {
+        @if ($multiplier != 0) {
+            #{$property}: calc(#{$difference} + #{$adder});
+        } @else {
+            #{$property}: 0;
+        }
+    }
+}
