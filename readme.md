@@ -10,7 +10,9 @@
     - container.dataset.barbaNamespace
     - document.querySelector('.transition__title')
     - querySelector
-    -  transitionTitle.innerHTML = next.container.dataset.barbaNamespace
+    - transitionTitle.innerHTML = next.container.dataset.barbaNamespace
+    - https://github.com/barbajs/barba/issues/515
+    - https://www.youtube.com/watch?v=ZPzFxm7DA7A&feature=youtu.be
 - [ ] implementare documentazione
 - [ ] implementare blog
 - [ ] implementa ecommerce
