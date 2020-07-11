@@ -49,8 +49,8 @@
 
             <!-- Page -->
 
-            <li class="menu__pages__item{% if page.url == '/features/user-friendly/' or page.url == '/features/easy-peasy/' or page.url == '/features/smart/' or page.url == '/features/extensible/' or page.url == '/features/futureproof/' or page.url == '/features/community/' %} is-active{% endif %}" data-ref="menu.item">
-              <a class="menu__pages__item__link "
+            <li class="menu__pages__item" data-ref="menu.item">
+              <a class="menu__pages__item__link{% if page.url == '/features/user-friendly/' or page.url == '/features/easy-peasy/' or page.url == '/features/smart/' or page.url == '/features/extensible/' or page.url == '/features/futureproof/' or page.url == '/features/community/' %} is-active{% endif %}"
                 href="{{ 'features/user-friendly/' | relative_url }}">
                 Features
               </a>
