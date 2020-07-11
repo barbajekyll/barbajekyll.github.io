@@ -2963,7 +2963,7 @@ body {
     opacity: 1; } }
 
 .transition {
-  position: fixed;
+  position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
   z-index: 9999;
   top: 0;
   left: 0;
