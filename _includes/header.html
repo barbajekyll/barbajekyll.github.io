@@ -137,8 +137,8 @@
 
             </li>
 
-            <li class="menu__pages__item{% if page.url == '/examples/' %} is-active{% endif %}" data-ref="menu.item">
-              <a class="menu__pages__item__link "
+            <li class="menu__pages__item" data-ref="menu.item">
+              <a class="menu__pages__item__link{% if page.url == '/examples/' %} is-active{% endif %}"
                 href="{{ 'examples/' | relative_url }}">
                 Examples
               </a>
@@ -149,8 +149,8 @@
 
             </li>
 
-            <li class="menu__pages__item{% if page.url == '/showcase/' %} is-active{% endif %}" data-ref="menu.item">
-              <a class="menu__pages__item__link "
+            <li class="menu__pages__item" data-ref="menu.item">
+              <a class="menu__pages__item__link{% if page.url == '/showcase/' %} is-active{% endif %}"
                 href="{{ 'showcase/' | relative_url }}">
                 Showcases
               </a>
@@ -161,8 +161,8 @@
 
             </li>
 
-            <li class="menu__pages__item{% if page.url == '/docs/getstarted/intro/' %} is-active{% endif %}" data-ref="menu.item">
-              <a class="menu__pages__item__link "
+            <li class="menu__pages__item" data-ref="menu.item">
+              <a class="menu__pages__item__link{% if page.url == '/docs/getstarted/intro/' %} is-active{% endif %}"
                 href="{{ 'docs/getstarted/intro/' | relative_url }}">
                 Docs
               </a>
