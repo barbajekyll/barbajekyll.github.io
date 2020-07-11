@@ -49,7 +49,7 @@
 
             <!-- Page -->
 
-            <li class="menu__pages__item" data-ref="menu.item">
+            <li class="menu__pages__item{% if page.url == '/features/user-friendly/' or page.url == '/features/easy-peasy/' or page.url == '/features/smart/' or page.url == '/features/extensible/' or page.url == '/features/futureproof/' or page.url == '/features/community/' %} is-active{% endif %}" data-ref="menu.item">
               <a class="menu__pages__item__link "
                 href="{{ 'features/user-friendly/' | relative_url }}">
                 Features
@@ -62,7 +62,8 @@
 
                   <!-- Subpage -->
 
-                  <li class="menu-subpages__item{% if page.url == '/features/user-friendly/' %} is-active{% endif %}" data-ref="menu.item">
+                  <li class="menu-subpages__item{% if page.url == '/features/user-friendly/' %} is-active{% endif %}"
+                    data-ref="menu.item">
                     <a class="menu-subpages__item__link" href="{{ 'features/user-friendly/' | relative_url }}">
                       <div class="menu-subpages__item__link__line">
                       </div>
@@ -72,7 +73,7 @@
                     </a>
                   </li>
 
-                  <li class="menu-subpages__item  "
+                  <li class="menu-subpages__item{% if page.url == '/features/easy-peasy/' %} is-active{% endif %}"
                     data-ref="menu.item">
                     <a class="menu-subpages__item__link" href="{{ 'features/easy-peasy/' | relative_url }}">
                       <div class="menu-subpages__item__link__line">
@@ -83,7 +84,7 @@
                     </a>
                   </li>
 
-                  <li class="menu-subpages__item  "
+                  <li class="menu-subpages__item{% if page.url == '/features/smart/' %} is-active{% endif %}"
                     data-ref="menu.item">
                     <a class="menu-subpages__item__link" href="{{ 'features/smart/' | relative_url }}">
                       <div class="menu-subpages__item__link__line">
@@ -94,7 +95,7 @@
                     </a>
                   </li>
 
-                  <li class="menu-subpages__item  "
+                  <li class="menu-subpages__item{% if page.url == '/features/extensible/' %} is-active{% endif %}"
                     data-ref="menu.item">
                     <a class="menu-subpages__item__link" href="{{ 'features/extensible/' | relative_url }}">
                       <div class="menu-subpages__item__link__line">
@@ -105,7 +106,7 @@
                     </a>
                   </li>
 
-                  <li class="menu-subpages__item  "
+                  <li class="menu-subpages__item{% if page.url == '/features/futureproof/' %} is-active{% endif %}"
                     data-ref="menu.item">
                     <a class="menu-subpages__item__link" href="{{ 'features/futureproof/' | relative_url }}">
                       <div class="menu-subpages__item__link__line">
@@ -116,7 +117,7 @@
                     </a>
                   </li>
 
-                  <li class="menu-subpages__item  "
+                  <li class="menu-subpages__item{% if page.url == '/features/community/' %} is-active{% endif %}"
                     data-ref="menu.item">
                     <a class="menu-subpages__item__link" href="{{ 'features/community/' | relative_url }}">
                       <div class="menu-subpages__item__link__line">
@@ -136,7 +137,7 @@
 
             </li>
 
-            <li class="menu__pages__item" data-ref="menu.item">
+            <li class="menu__pages__item{% if page.url == '/examples/' %} is-active{% endif %}" data-ref="menu.item">
               <a class="menu__pages__item__link "
                 href="{{ 'examples/' | relative_url }}">
                 Examples
@@ -148,7 +149,7 @@
 
             </li>
 
-            <li class="menu__pages__item" data-ref="menu.item">
+            <li class="menu__pages__item{% if page.url == '/showcase/' %} is-active{% endif %}" data-ref="menu.item">
               <a class="menu__pages__item__link "
                 href="{{ 'showcase/' | relative_url }}">
                 Showcases
@@ -160,7 +161,7 @@
 
             </li>
 
-            <li class="menu__pages__item" data-ref="menu.item">
+            <li class="menu__pages__item{% if page.url == '/docs/getstarted/intro/' %} is-active{% endif %}" data-ref="menu.item">
               <a class="menu__pages__item__link "
                 href="{{ 'docs/getstarted/intro/' | relative_url }}">
                 Docs
