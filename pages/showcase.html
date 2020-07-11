@@ -1,46 +1,132 @@
 ---
-layout: page
-title: Showcase
+layout: default
+overview: true
 permalink: /showcase/
-redirect_from:
-  - /docs/sites/
 ---
 
-<p>Jekyll is used for all kinds of usecases. Here's some of our favorites:</p>
+<main class="site-main" role="main">
+  <div class="site-content">
+    <div class="site-content-inner">
 
-<ul class="showcase" id="showcase">
-  {% for s in site.data.showcase reversed -%}
-  <li>
-    <a href="{{ s.url | relative_url }}" target="_blank">
-      <figure>
-        <div class="imageWrapper">
-          <img loading="lazy" class="b-lazy" src="{{ 'img/spacer.gif' | relative_url }}" alt="{{ s.name }}" width="404">
-        </div>
-        <figcaption>{{ s.name }}</figcaption>
-      </figure>
-    </a>
-  </li>
-  {% endfor -%}
-  <li class="spacer"></li>
-</ul>
+      <section class="page">
+<div class="big-title">
+<div class="big-title__title">Showcases</div>
+</div>
+<div class="page-inner">
 
-<script src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js"></script>
-<script>
-  var apiUrl = 'https://d2ov3dk2yjyb0w.cloudfront.net/',
-    a = 'c7aa76e1-684d-4c45-b396-78b893839b5f',
-    b = 'c7bfb661-71a8-40bb-baac-7ddad709639c',
-    sites = document.getElementById('showcase').getElementsByTagName('a');
+<div class="page__header">
+  <h1 id="Showcases"><a href="#Showcases" class="headerlink" title="Showcases"></a>Showcases</h1><p>Our special gallery displays the best websites using Barba.js</p>
 
-  for (var i = 0; i < sites.length; i++) {
-    var href = sites[i].getAttribute('href'),
-      inputUrl = encodeURIComponent(href),
-      q = 'url=' + inputUrl + '&delay=2&resizeWidth=800&resizeHeight=600',
-      hash = md5(b + q),
-      resultImgUrl = apiUrl + a + '/' + hash + '/image?' + q;
+</div>
 
-    sites[i].getElementsByTagName('img')[0].setAttribute('data-src', resultImgUrl);
-  }
 
-  var bLazy = new Blazy();
-</script>
+<div class="page__separator"></div>
+
+
+
+<div class="showcase-cta" data-component="showcase-cta">
+<button class="showcase-cta__button cta">
+<div class="showcase-cta__button-inner">
+  <div class="showcase-cta__button__pulse"></div>
+</div>
+<figcaption class="showcase-cta__button__caption">
+  <span class="showcase-cta__button__subtitle">Submit</span>
+  <span class="showcase-cta__button__title">website</span>
+</figcaption>
+</button>
+
+<!-- Modal with a form onButtonClick -->
+<div class="modal" data-component="modal">
+
+<div class="modal__overlay" data-ref="modal.overlay"></div>
+
+<div class="modal__box">
+<div class="modal__box__close">
+  <div class="menu-trigger" data-ref="modal.close">
+    <span class="menu-trigger__bar"></span>
+    <span></span>
+    <span class="menu-trigger__bar"></span>
+  </div>
+</div>
+<form class="form" data-component="form">
+
+<h1 class="form__title">Submit website</h1>
+
+<div class=form__wrapper data-ref="form.inputs">
+
+<div class="form__picture drop-area" data-ref="form.dropArea">
+  <p class="form__picture__size">720x460</p>
+  <p class="form__picture__infos">GIF/JPG/PNG (MAX 2Mb)</p>
+  <svg viewBox="0 0 10 10" aria-hidden="true" class="icon--barba">
+<!-- <use attr.xlink:href="assets/svg/sprite.svg#barba-upload"></use> -->
+<use xlink:href="#barba-upload"></use>
+</svg>
+  <p class="form__picture__infos--white" data-ref="form.pictureName">No file submitted</p>
+  <input class="form__picture__input" type="file" name="picture" accept=".jpg, .jpeg, .png, .gif"
+    data-ref="form.pictureFile">
+  <label class="form__picture__infos" for="picture">Drag an image here or browse to upload.</label>
+</div required>
+<div class="form__section">
+  <div class="form__field">
+    <label class="form__label" for="siteName">Site name</label>
+    <input class="form__input--text" type="text" name="siteName" placeholder="Website name" data-ref="form.siteName"
+      required>
+  </div>
+  <div class="form__field">
+    <label class="form__label" for="siteUrl">Url</label>
+    <input class="form__input--text" type="url" name="siteUrl" placeholder="https://" data-ref="form.siteUrl"
+      required>
+  </div>
+</div>
+<div class="form__section">
+  <div class="form__field">
+    <label class="form__label" for="authorName">Project by</label>
+    <input class="form__input--text" type="text" name="authorName" placeholder="Author name"
+      data-ref="form.authorName" required>
+  </div>
+  <div class="form__field">
+    <label class="form__label" for="authorUrl">Author url</label>
+    <input class="form__input--text" type="url" name="authorUrl" placeholder="https://" data-ref="form.authorUrl">
+  </div>
+</div>
+<div class="form__submit" data-ref="form.submit">
+  <input class="form__input--submit" type="submit" value="Submit project">
+</div>
+
+</div>
+
+<!-- Behavior onSubmit -->
+<div class="loader--spinner" data-component="spinner"></div>
+
+<div class="form__feedback--succeed" data-ref="form.succeed">
+<p>Your showcase has been successfully submitted</p>
+</div>
+
+<div class="form__feedback--failed" data-ref="form.failed">
+<p>Error</p>
+</div>
+
+<!-- Behavior onSubmit [end]-->
+
+</form>
+
+</div>
+
+</div>
+
+<!-- Modal with a form onButtonClick [end]-->
+</div>
+
+
+</div>
+
+
+<ol class="grid" data-component="showcase-grid">
+
+</ol>
+
+
+</section>
+    </div>
+  </div><!-- end .site-content -->
+</main><!-- end .site-main -->
