@@ -2,10 +2,18 @@
 
 - [ ] Modificare il destinatarion del form di inserimento nella pagina /showcase/
 - [ ] Capire come modificare la label della la transizione basica (mostra sempre il testo home dovunque si navighi)
+  1. https://www.google.com/search?sxsrf=ALeKk00xVUojTXeCuqN9b3ngzR_Sdwv4wg%3A1594490987838&ei=awAKX7nuMvLKrgSC_L-QBQ&q=javascript+ehide+scroll+bar&oq=javascript+ehide+scroll+bar&gs_lcp=CgZwc3ktYWIQAzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIICAAQDRAeEBMyCAgAEA0QHhATMgoIABANEAUQHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATOgcIABBHELADUMEZWM4cYIkeaAFwAHgAgAF5iAG4A5IBAzAuNJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwj5z7Xn5cXqAhVypYsKHQL-D1IQ4dUDCAw&uact=5
+  2. https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
 - [ ] implementare documentazione
 - [ ] implementare blog
 - [ ] implementa ecommerce
 - [ ] implementa wordpress in background su jekyll
+
+# Errori
+
+## gsap
+
+- https://greensock.com/forums/topic/22491-gsap3-target-object-not-found/
 
 # Useful resources
 
