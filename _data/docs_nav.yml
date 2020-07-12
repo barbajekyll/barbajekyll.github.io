@@ -19,7 +19,6 @@
     - link: /docs/advanced/third-party/
     - link: /docs/advanced/utils/
     - link: /docs/advanced/api/
-
 - title: Plugins
   docs:
     - link: /docs/plugins/intro/
