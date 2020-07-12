@@ -1,0 +1,13 @@
+
+  {% case page.url %}
+    {% when '/' %}
+      home
+    {% when '/features/user-friendly/' or '/features/easy-peasy/' or '/features/smart/' or '/features/extensible/' or '/features/futureproof/' or '/features/community/' %}
+      feature
+    {% when '/examples/' %}
+      examples
+    {% when '/showcase/' %}
+      showcase
+    {% when find_exp:'docs' %}
+      docs
+  {% endcase %}
