@@ -3,7 +3,7 @@
     - link: /docs/getstarted/intro/
     - link: /docs/getstarted/install/
     - link: /docs/getstarted/markup/
-  	- link: /docs/getstarted/basic-transition/
+    - link: /docs/getstarted/basic-transition/
     - link: /docs/getstarted/custom-code/
     - link: /docs/getstarted/lifecycle/
     - link: /docs/getstarted/legacy/
