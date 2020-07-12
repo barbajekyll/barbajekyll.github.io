@@ -1,6 +1,11 @@
 # Link utili
 
 - Jekyll Liquid Cheatsheet https://gist.github.com/antoniotrento/9a78b69c727e8c63498508098ec736b7
+- https://jekyllrb.com/docs/configuration/front-matter-defaults/
+- https://jekyllrb.com/docs/collections/
+- https://learn-the-web.algonquindesign.ca/topics/jekyll/
+- https://github.com/jekyll/jekyll/issues/881
+- https://stackoverflow.com/questions/53923035/jekyll-check-if-page-belongs-to-a-collection
 
 # To do
 
