@@ -6,7 +6,7 @@
 
 - [ ] Modificare il destinatarion del form di inserimento nella pagina /showcase/
   1. il file js è in /theme/barba/components/showcase/Form.js e anche in file simili allinterno della cartella
-- [ ] Capire come modificare la label della la transizione basica (mostra sempre il testo home dovunque si navighi)
+- [X] Capire come modificare la label della la transizione basica (mostra sempre il testo home dovunque si navighi)
   1. https://www.google.com/search?sxsrf=ALeKk00xVUojTXeCuqN9b3ngzR_Sdwv4wg%3A1594490987838&ei=awAKX7nuMvLKrgSC_L-QBQ&q=javascript+ehide+scroll+bar&oq=javascript+ehide+scroll+bar&gs_lcp=CgZwc3ktYWIQAzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIICAAQDRAeEBMyCAgAEA0QHhATMgoIABANEAUQHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATOgcIABBHELADUMEZWM4cYIkeaAFwAHgAgAF5iAG4A5IBAzAuNJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwj5z7Xn5cXqAhVypYsKHQL-D1IQ4dUDCAw&uact=5
   2. https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
   3. In /theme/barba/source/_js/transitions/default.js viene applicata la label per il _layouts/default.html .transition sotto il footer, altri js in causa: route.js e ../app.js potrebbe anche derivare dal _layouts/jsbarbahead.html
