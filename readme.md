@@ -4,6 +4,10 @@
 
 # To do
 
+- [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
+- [ ] controllo dinamico documentazione dell'albero dei docs
+  1. https://stackoverflow.com/questions/33613712/how-may-i-manually-sort-jekyll-pages-using-yaml
+  2. impostare menu ed elenchi da https://github.com/barbajekyll/barbajekyll.github.io/tree/master/_data
 - [ ] Modificare il destinatarion del form di inserimento nella pagina /showcase/
   1. il file js è in /theme/barba/components/showcase/Form.js e anche in file simili allinterno della cartella
 - [X] Capire come modificare la label della la transizione basica (mostra sempre il testo home dovunque si navighi)
@@ -21,10 +25,7 @@
 - [ ] implementare blog
 - [ ] implementa ecommerce
 - [ ] implementa wordpress in background su jekyll
-- [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
-- [ ] controllo dinamico documentazione dell'albero dei docs
-  1. https://stackoverflow.com/questions/33613712/how-may-i-manually-sort-jekyll-pages-using-yaml
-  2. impostare menu ed elenchi da https://github.com/barbajekyll/barbajekyll.github.io/tree/master/_data
+
 
 # Errori
 
