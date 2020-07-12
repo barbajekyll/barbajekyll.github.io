@@ -1,36 +1,38 @@
 - title: Getting Started
   docs:
-    - link: /docs/
-    - link: /docs/ruby-101/
-    - link: /docs/installation/
-    - link: /docs/community/
-    - link: /docs/step-by-step/01-setup/
-- title: Build
+    - link: /docs/getstarted/intro/
+    - link: /docs/getstarted/install/
+    - link: /docs/getstarted/markup/
+  	- link: /docs/getstarted/basic-transition/
+    - link: /docs/getstarted/custom-code/
+    - link: /docs/getstarted/lifecycle/
+    - link: /docs/getstarted/legacy/
+  	- link: /docs/getstarted/browser-support/
+  	- link: /docs/getstarted/useful-links/
+- title: Advanced
   docs:
-    - link: /docs/usage/
-    - link: /docs/configuration/
-- title: Content
+    - link: /docs/advanced/hooks/
+    - link: /docs/advanced/transitions/
+    - link: /docs/advanced/views/
+    - link: /docs/advanced/strategies/
+    - link: /docs/advanced/recipes	/
+    - link: /docs/advanced/third-party/
+    - link: /docs/advanced/utils/
+    - link: /docs/advanced/api/
+
+- title: Plugins
   docs:
-    - link: /docs/pages/
-    - link: /docs/posts/
-    - link: /docs/front-matter/
-    - link: /docs/collections/
-    - link: /docs/datafiles/
-    - link: /docs/assets/
-    - link: /docs/static-files/
-- title: Site Structure
-  docs:
-    - link: /docs/structure/
-    - link: /docs/liquid/
-    - link: /docs/variables/
-    - link: /docs/includes/
-    - link: /docs/layouts/
-    - link: /docs/permalinks/
-    - link: /docs/themes/
-    - link: /docs/pagination/
-- title: Guides
-  docs:
-    - link: /docs/plugins/
-    - link: /docs/migrations/
-    - link: /docs/upgrading/
-    - link: /docs/deployment/
+    - link: /docs/plugins/intro/
+    - link: /docs/plugins/router/
+    - link: /docs/plugins/prefetch/
+    - link: /docs/plugins/css/
+    - link: /docs/plugins/head/
+    - link: /docs/plugins/preset/
+
+
+
+
+# - title: userguide
+#	analytics
+#	markup
+#	syntax

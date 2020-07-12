@@ -8,6 +8,7 @@
       examples
     {% when '/showcase/' %}
       showcase
-    {% when '/docs/*/' %}
-      docs
   {% endcase %}
+  {% if page.collection == 'docs' %}
+    docs
+  {% endif %}

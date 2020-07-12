@@ -30,7 +30,7 @@ defaults:
     path: _docs
     type: docs
   values:
-    layout: docs
+    layout: default
 - scope:
     path: _posts
     type: posts
