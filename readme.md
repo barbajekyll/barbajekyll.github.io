@@ -1,3 +1,7 @@
+# Link utili
+
+- Jekyll Liquid Cheatsheet https://gist.github.com/antoniotrento/9a78b69c727e8c63498508098ec736b7
+
 # To do
 
 - [ ] Modificare il destinatarion del form di inserimento nella pagina /showcase/
@@ -18,6 +22,9 @@
 - [ ] implementa ecommerce
 - [ ] implementa wordpress in background su jekyll
 - [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
+- [ ] controllo dinamico documentazione dell'albero dei docs
+  1. https://stackoverflow.com/questions/33613712/how-may-i-manually-sort-jekyll-pages-using-yaml
+  2. impostare menu ed elenchi da https://github.com/barbajekyll/barbajekyll.github.io/tree/master/_data
 
 # Errori
 
