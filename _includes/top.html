@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="{{ 'css/barba.css' | relative_url }}" type="text/css" media="all">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{{ 'favicon.ico' | relative_url }}">
-  <title>{% if page.tag or page.title %}{{ page.title | escape }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description | xml_escape }}{% else %}{{ site.description }}{% endif %}" />
+  <title>{% if post.tag or post.title %}{{ post.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if post.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   {% seo title=false description=false %}
   {%- include analytics.html -%}
   {%- include jsbarbahead.html -%}
