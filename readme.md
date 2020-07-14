@@ -20,6 +20,8 @@ barbajekyll è un nuovo tema jeckyll con download click to tweet,
 - [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
 - [ ] creazione logica per scegliere l'icona social
 - [ ] capire bene il problema dei titoli delle pagine che rimane jekyllil
+- [ ] sviluppare pulsante deploy to Heroku netlify e cloud cannon e forestly 
+- [ ] creare logica per caricamento dinamico templates, css e javascript 
 - [ ] creazione logica di visualizzazione dinamica menu dal config.yaml
 - [ ] controllo dinamico documentazione dell'albero dei docs
     1. https://stackoverflow.com/questions/33613712/how-may-i-manually-sort-jekyll-pages-using-yaml
