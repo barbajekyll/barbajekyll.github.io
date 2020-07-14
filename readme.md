@@ -25,7 +25,7 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 - [ ] Capire come far funzionare jekyll-seo-tag-plugin per far popolare le pagine con titolo descrizione titolo twitter cards descrizione twitter cards e immagine con quelli della pagina
   1. https://stackoverflow.com/questions/53638446/jekyll-seo-tag-doesnt-work-within-github-pages
   2. https://jekyllrb.com/docs/step-by-step/03-front-matter/
-  3. 
+  3.
   4.
 - [ ] Aggiungere simpleform https://getsimpleform.com/ o https://formspree.io/ o http://blog.plataformatec.com.br/tag/simple_form/
 - [ ] Capire come integrare google forms per i sondaggi
@@ -118,6 +118,25 @@ https://github.com/mcin0244/jekyll-ecommerce-website
 ## Strumenti utili al repository
 
 1. [ ] https://azure.microsoft.com/it-it/pricing/details/search/
+
+## Organizzazioni utenti girhub rilevanti per jekyll e tecnologie intorno
+
+1. [ ] https://github.com/jekyll
+2. [ ]
+2. [ ]
+3. [ ]
+4. [ ]
+5. [ ]
+6. [ ]
+7. [ ] https://github.com/sourcelevel
+  1. https://github.com/georgeguimaraes
+  2. https://github.com/hugobarauna
+  3. https://github.com/rafaelozaki
+  4. https://github.com/josevalim
+  5. https://github.com/plataformatec
+8. [ ]
+9. [ ]
+10. [ ] https://github.com/sourcelevel
 
 # ERRORI
 
