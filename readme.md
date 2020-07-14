@@ -6,34 +6,42 @@ Esempi espansioni
 
 Pack di animazioni hentai famosi
 Transizioni da una pagina all’altra
-Modal di apertura bottoni, plugin, temi, 
-Con modello pagamento ricorrente per tema premium offrire molti blocchi pre costruiti plugin di ecommerce con stripe e integrazione email marketing (cercare piattaforma di email marketing per reseller) e soluzione buy white label come prodotto night tiket 
+Modal di apertura bottoni, plugin, temi,
+Con modello pagamento ricorrente per tema premium offrire molti blocchi pre costruiti plugin di ecommerce con stripe e integrazione email marketing (cercare piattaforma di email marketing per reseller) e soluzione buy white label come prodotto night tiket
 
 - perfezionamento logica del sito, eliminazione file superflui, pulizia javascript
 - creare documentazione basata sulla logica usata nel config.yaml
 
-# Link utili
+Barbajekyll tema free tweet + espansioni grafiche a pagamento
 
-- Jekyll Liquid Cheatsheet https://gist.github.com/antoniotrento/9a78b69c727e8c63498508098ec736b7
-- https://jekyllrb.com/docs/configuration/front-matter-defaults/
-- https://jekyllrb.com/docs/collections/
-- https://learn-the-web.algonquindesign.ca/topics/jekyll/
-- https://github.com/jekyll/jekyll/issues/881
-- https://stackoverflow.com/questions/53923035/jekyll-check-if-page-belongs-to-a-collection
+Esempi espansioni
+
+Pack di animazioni hentai famosi
+Transizioni da una pagina all’altra
+Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema premium con molti blocchi pre costruiti e integrazione email marketing (cercare piattaforma di email marketing per reseller) e soluzione buy white label come prodotto night tiket
 
 # TO DO
 
+- [ ] Provare a mettere in privata la repository del sito in modo che non possa essere copiato
 - [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
 - [ ] creazione logica per scegliere l'icona social
 - [ ] capire bene il problema dei titoli delle pagine che rimane jekyllil
-- [ ] sviluppare pulsante deploy to Heroku netlify e cloud cannon e forestly 
-- [ ] creare logica per caricamento dinamico templates, css e javascript 
+- [ ] sviluppare pulsante deploy to Heroku netlify e cloud cannon e forestly
+- [ ] creare logica per caricamento dinamico templates, css e javascript
 - [ ] creazione logica di visualizzazione dinamica menu dal config.yaml
 - [ ] controllo dinamico documentazione dell'albero dei docs
     1. https://stackoverflow.com/questions/33613712/how-may-i-manually-sort-jekyll-pages-using-yaml
     2. impostare menu ed elenchi da https://github.com/barbajekyll/barbajekyll.github.io/tree/master/_data
 - [ ] Modificare il destinatarion del form di inserimento nella pagina /showcase/
     1. il file js è in /theme/barba/components/showcase/Form.js e anche in file simili allinterno della cartella
+- [ ] implementare documentazione
+- [ ] implementare blog
+- [ ] implementa ecommerce
+- [ ] implementa pagamenti in stripe
+- [ ] implementa wordpress in background su jekyll
+
+## DONE TO DO
+
 - [X] Capire come modificare la label della la transizione basica (mostra sempre il testo home dovunque si navighi)
     1. https://www.google.com/search?sxsrf=ALeKk00xVUojTXeCuqN9b3ngzR_Sdwv4wg%3A1594490987838&ei=awAKX7nuMvLKrgSC_L-QBQ&q=javascript+ehide+scroll+bar&oq=javascript+ehide+scroll+bar&gs_lcp=CgZwc3ktYWIQAzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIICAAQDRAeEBMyCAgAEA0QHhATMgoIABANEAUQHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATOgcIABBHELADUMEZWM4cYIkeaAFwAHgAgAF5iAG4A5IBAzAuNJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwj5z7Xn5cXqAhVypYsKHQL-D1IQ4dUDCAw&uact=5
     2. https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
@@ -45,12 +53,41 @@ Con modello pagamento ricorrente per tema premium offrire molti blocchi pre cost
         - transitionTitle.innerHTML = next.container.dataset.barbaNamespace
         - https://github.com/barbajs/barba/issues/515
         - https://www.youtube.com/watch?v=ZPzFxm7DA7A&feature=youtu.be
-- [ ] implementare documentazione
-- [ ] implementare blog
-- [ ] implementa ecommerce
-- [ ] implementa pagamenti in stripe 
-- [ ] implementa wordpress in background su jekyll
 
+## codice da sviluppare
+
+- dopo il tweet, un redirect alla pagina di download, e deploying su githubpages cloudcaanon ntlify e heroku
+
+## repo da forkare
+
+https://github.com/avillafiorita/jekyll-csv_read
+
+https://github.com/CloudCannon/bakery-store-jekyll-template
+
+https://github.com/jekyll-store/microservice
+
+https://github.com/jekyll-store/jekyll-store.github.io
+
+https://github.com/snipcart/cloudcannon-jekyll-ecommerce
+
+https://github.com/nortbotics/jekyll-ecommerce-theme
+
+https://github.com/commercelayer/contentful-commerce
+
+https://github.com/vassilis/jekyll-ecommerce-template
+
+https://github.com/msimmer/kosmas-systems
+
+https://github.com/mcin0244/jekyll-ecommerce-website
+
+# Link utili
+
+- Jekyll Liquid Cheatsheet https://gist.github.com/antoniotrento/9a78b69c727e8c63498508098ec736b7
+- https://jekyllrb.com/docs/configuration/front-matter-defaults/
+- https://jekyllrb.com/docs/collections/
+- https://learn-the-web.algonquindesign.ca/topics/jekyll/
+- https://github.com/jekyll/jekyll/issues/881
+- https://stackoverflow.com/questions/53923035/jekyll-check-if-page-belongs-to-a-collection
 
 # Errori
 
