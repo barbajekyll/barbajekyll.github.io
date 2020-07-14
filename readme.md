@@ -92,6 +92,12 @@ https://github.com/mcin0244/jekyll-ecommerce-website
 
 # LINK UTILI
 
+## Tool Jekyll
+
+1. https://github.com/jekyll
+
+## Tutorials
+
 - Jekyll Liquid Cheatsheet https://gist.github.com/antoniotrento/9a78b69c727e8c63498508098ec736b7
 - https://jekyllrb.com/docs/configuration/front-matter-defaults/
 - https://jekyllrb.com/docs/collections/
