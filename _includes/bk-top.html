@@ -8,11 +8,8 @@
   <link rel="stylesheet" href="{{ 'css/barba.css' | relative_url }}" type="text/css" media="all">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{{ 'favicon.ico' | relative_url }}">
-  <title>{% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} - {% endif %}{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} - {% endif %}{{ site.name | escape }}{% unless page.tag or page.title %} - {{ site.description | escape }}{% endunless %}</title>
-  <description>{% if post.image %}&lt;p&gt;&lt;img src="{{ post.image | prepend: site.baseurl | prepend: site.url }}" alt="{{ post.title }}" class="webfeedsFeaturedVisual"&gt;&lt;/p&gt;{% endif %}{{ post.content | xml_escape }}</description>
-  {% seo title=false %}
+  {% seo %}
   {%- include analytics.html -%}
-  {%- include headgtag.html -%}
   {%- include jsbarbahead.html -%}
   <!--[if lt IE 9]>
   <script src="/js/html5shiv.min.js"></script>

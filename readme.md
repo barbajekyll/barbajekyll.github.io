@@ -22,7 +22,7 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 
 # TO DO
 
-- [ ] Aggiungere formfree 
+- [ ] Aggiungere formfree
 - [ ] Provare a mettere in privata la repository del sito in modo che non possa essere copiato
 - [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
 - [ ] creazione logica per scegliere l'icona social
@@ -96,6 +96,15 @@ https://github.com/mcin0244/jekyll-ecommerce-website
 - https://learn-the-web.algonquindesign.ca/topics/jekyll/
 - https://github.com/jekyll/jekyll/issues/881
 - https://stackoverflow.com/questions/53923035/jekyll-check-if-page-belongs-to-a-collection
+
+## Tutorials su plugin e strumenti
+
+1. [ ] https://blog.mastykarz.nl/improve-jekyll-seo/
+1. [ ] http://jekyll.github.io/jekyll-seo-tag/advanced-usage/
+
+## Strumenti utili al repository
+
+1. [ ] https://azure.microsoft.com/it-it/pricing/details/search/
 
 # ERRORI
 
