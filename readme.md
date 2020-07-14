@@ -22,7 +22,8 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 
 # TO DO
 
-- [ ] Aggiungere formfree
+- [ ] Aggiungere simpleform https://getsimpleform.com/ o https://formspree.io/ o http://blog.plataformatec.com.br/tag/simple_form/
+- [ ] Capire come integrare google forms per i sondaggi
 - [ ] Provare a mettere in privata la repository del sito in modo che non possa essere copiato
 - [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
 - [ ] creazione logica per scegliere l'icona social
