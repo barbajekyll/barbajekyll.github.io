@@ -22,9 +22,11 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 
 # TO DO
 
+- [ ] Aggiungere formfree 
 - [ ] Provare a mettere in privata la repository del sito in modo che non possa essere copiato
 - [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
 - [ ] creazione logica per scegliere l'icona social
+- [ ] creare logica per sfruttare config.yml come configurazione voci di menu, navigazione docs, titoli seo delle pagine, caricamento dinamico CSS nelle pagine
 - [ ] capire bene il problema dei titoli delle pagine che rimane jekyllil
 - [ ] sviluppare pulsante deploy to Heroku netlify e cloud cannon e forestly
 - [ ] creare logica per caricamento dinamico templates, css e javascript
@@ -40,6 +42,16 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 - [ ] implementa pagamenti in stripe
 - [ ] implementa wordpress in background su jekyll
 
+## CODICE DA SVILUPPARE
+
+ Creare logica per sfruttare config.yml come configurazione voci di menu, navigazione docs, titoli, descrizioni seo delle pagine, caricamento dinamico CSS nelle pagine
+
+- [ ] controllare bene analytics e google tag manager provare a collegarlo
+- [ ] configurazione webpack
+- [ ] creazione logica per scegliere l'icona social
+- [ ] Pagina download del tema, dopo il tweet, un redirect alla pagina di download, e deploying su githubpages cloudcaanon ntlify e heroku
+- [ ] Logica per associare le animazioni ad altri file sgv
+
 ## DONE TO DO
 
 - [X] Capire come modificare la label della la transizione basica (mostra sempre il testo home dovunque si navighi)
@@ -54,11 +66,7 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
         - https://github.com/barbajs/barba/issues/515
         - https://www.youtube.com/watch?v=ZPzFxm7DA7A&feature=youtu.be
 
-## codice da sviluppare
-
-- dopo il tweet, un redirect alla pagina di download, e deploying su githubpages cloudcaanon ntlify e heroku
-
-## repo da forkare
+## REPO DA FORKARE PER E-COMMERCE
 
 https://github.com/avillafiorita/jekyll-csv_read
 
@@ -80,7 +88,7 @@ https://github.com/msimmer/kosmas-systems
 
 https://github.com/mcin0244/jekyll-ecommerce-website
 
-# Link utili
+# LINK UTILI
 
 - Jekyll Liquid Cheatsheet https://gist.github.com/antoniotrento/9a78b69c727e8c63498508098ec736b7
 - https://jekyllrb.com/docs/configuration/front-matter-defaults/
@@ -89,9 +97,9 @@ https://github.com/mcin0244/jekyll-ecommerce-website
 - https://github.com/jekyll/jekyll/issues/881
 - https://stackoverflow.com/questions/53923035/jekyll-check-if-page-belongs-to-a-collection
 
-# Errori
+# ERRORI
 
-## Google chrome developer tools
+## GOOGLE CHROME DEVELOPER TOOLS HINTS
 
 - https://www.google.com/search?q=chrome+web+developer+show+the+attributes+of+a+javascript+class&oq=chrome+web+developer+show+the+attributes+of+a+javascript+class&aqs=chrome..69i57.21595j0j7&sourceid=chrome&ie=UTF-8
 - https://www.google.com/search?q=javascript+chrome+consol+show+list+of+objects&oq=javascript+chrome+consol+show+list+of+objects&aqs=chrome..69i57.13302j0j7&sourceid=chrome&ie=UTF-8
@@ -102,11 +110,11 @@ https://github.com/mcin0244/jekyll-ecommerce-website
 - https://javascript.info/keys-values-entries
 -
 
-## gsap
+## GSAP ANIMAZIONI JAVASCRIPT
 
 - https://greensock.com/forums/topic/22491-gsap3-target-object-not-found/
 
-## webpack undertanding
+## WEBPACK UNDERSTANDING
 
 - https://www.google.com/search?q=show+address+where+webpack+take+data&oq=show+address+where+webpack+take+data&aqs=chrome..69i57j33.24133j0j7&sourceid=chrome&ie=UTF-8
 - https://webpack.js.org/concepts/entry-points/
