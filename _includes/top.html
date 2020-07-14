@@ -10,7 +10,6 @@
   <link rel="icon" type="image/x-icon" href="{{ 'favicon.ico' | relative_url }}">
   <title>{% if page.tag or page.title %}{{ page.title | escape }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | xml_escape }}{% else %}{{ site.description }}{% endif %}" />
-
   {% seo title=false description=false %}
   {%- include analytics.html -%}
   {%- include headgtag.html -%}
