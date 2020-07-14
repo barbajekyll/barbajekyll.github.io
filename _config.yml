@@ -37,9 +37,9 @@ google_site_verification:
 #########################################################################
 #################    MY THEME EDITING  ##################################
 #########################################################################
-css:
-  default: main
-  blog: blog
+css: # the css templates in (css/namefile.css [is in scss format but when declared need  to use .css]) used by specific layouts,
+  default: barba # the css templates in css/barba.css
+  blog: blog # the css templates in css/blog.css
 #########################################################################
 #################      END EDITING    ###################################
 #########################################################################
