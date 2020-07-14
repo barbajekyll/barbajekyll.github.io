@@ -1,0 +1,103 @@
+---
+layout: default
+overview: true
+title: "Examples of barbajekyll implementations"
+description: "with barbajekyll you can quckly run a jekyll static site with great animation provided by barbajs"
+permalink: /examples/
+---
+
+<main class="site-main" role="main">
+  <div class="site-content">
+    <div class="site-content-inner">
+
+      <section class="page">
+<div class="big-title">
+<div class="big-title__title">Examples</div>
+</div>
+<div class="page-inner">
+
+<div class="page__header">
+  <h1 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h1><p>Some small codepens exploring facets of Barba.js</p>
+
+</div>
+
+
+
+
+</div>
+
+
+<ol class="grid" data-component="examples-grid">
+
+<li class="grid__item example__card">
+<a href="https://codepen.io/thierrymichel/project/full/XkkWWv" target="_blank" rel="noopener noreferrer">
+<h2 class="example__card__title">Sync sliding</h2>
+<div class="example__card__picture">
+  <img class="partial-image" src="{{ 'assets/examples/example01.png' | relative_url }}" alt="Barba.js example 01">
+
+</div>
+</a>
+<div class="example__card__links">
+
+<a target="_blank" class="grid__item__link link--watch" href=https://codepen.io/thierrymichel/project/full/XkkWWv>
+  <svg viewBox="0 0 20 15" aria-hidden="true" class="icon--barba">
+<!-- <use attr.xlink:href="assets/svg/sprite.svg#barba-eye"></use> -->
+<use xlink:href="#barba-eye"></use>
+</svg>
+  Watch
+</a>
+
+
+<a target="_blank" class="grid__item__link link--source" href=https://codepen.io/thierrymichel/project/editor/XkkWWv>
+  <svg viewBox="0 0 13 15" aria-hidden="true" class="icon--barba">
+<!-- <use attr.xlink:href="assets/svg/sprite.svg#barba-github"></use> -->
+<use xlink:href="#barba-github"></use>
+</svg>
+  Source
+</a>
+
+
+</div>
+</li>
+
+
+<li class="grid__item example__card">
+<a href="https://codepen.io/thierrymichel/project/full/ZrzBBK" target="_blank" rel="noopener noreferrer">
+<h2 class="example__card__title">Once upon a router</h2>
+<div class="example__card__picture">
+  <img class="partial-image" src="{{ 'assets/examples/example02.png' | relative_url }}" alt="Barba.js example 02">
+
+</div>
+</a>
+<div class="example__card__links">
+
+<a target="_blank" class="grid__item__link link--watch" href=https://codepen.io/thierrymichel/project/full/ZrzBBK>
+  <svg viewBox="0 0 20 15" aria-hidden="true" class="icon--barba">
+<!-- <use attr.xlink:href="assets/svg/sprite.svg#barba-eye"></use> -->
+<use xlink:href="#barba-eye"></use>
+</svg>
+  Watch
+</a>
+
+
+<a target="_blank" class="grid__item__link link--source" href=https://codepen.io/thierrymichel/project/editor/ZrzBBK>
+  <svg viewBox="0 0 13 15" aria-hidden="true" class="icon--barba">
+<!-- <use attr.xlink:href="assets/svg/sprite.svg#barba-github"></use> -->
+<use xlink:href="#barba-github"></use>
+</svg>
+  Source
+</a>
+
+
+</div>
+</li>
+
+
+
+</ol>
+
+
+</section>
+    </div>
+  </div><!-- end .site-content -->
+</main><!-- end .site-main -->
