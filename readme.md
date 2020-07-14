@@ -96,6 +96,12 @@ https://github.com/mcin0244/jekyll-ecommerce-website
 
 # LINK UTILI
 
+## Emoji utili
+
+https://emojipedia.org/
+
+⭐ 🤔 🤩 😎 ⛔ ❗ ✅ ❌
+
 ## Tool Jekyll
 
 1. https://github.com/jekyll

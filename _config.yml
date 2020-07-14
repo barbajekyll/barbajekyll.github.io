@@ -1,12 +1,21 @@
 ---
 version: 4.1.0
 name: Barbajekyll • Simple, barba.js transition, on jekyll sites
-title: {{ page.title }}
+title: U+007BU+007B page.title U+007DU+007D
 description: Create badass jekyll site with smooth transitions
 # description: >  this means to ignore newlines until "show_excerpts:"
 # Write an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
 # Google search results) and in your feed.xml site description.
+
+search: true
+env: dev
+config:
+  dev:
+    url: http://localhost:4000
+  prod:
+    url: http://requestly.github.io/blog
+
 url: https://barbajekyll.github.io
 repository: https://github.com/barbajekyll/barbajekyll.github.io
 # baseurl: barbajekyll
@@ -25,6 +34,16 @@ google_analytics_id: UA-172632574-1
 google_analytics_name_id:
 google_tag_id: GTM-KRPZDXN
 google_site_verification:
+#########################################################################
+#################    MY THEME EDITING  ##################################
+#########################################################################
+CssTemplate:
+#########################################################################
+#################      END EDITING    ###################################
+#########################################################################
+#########################################################################
+#################      COLLECTIONS    ###################################
+#########################################################################
 collections:
   docs:
     permalink: "/:collection/:path/"
@@ -93,6 +112,9 @@ social_links:
 #header_pages:
 # - about.md<!-- Global site tag (gtag.js) - Google Analytics -->
 
+#################   END COLLECTIONS   ###################################
+############    PLUGINS, CONFS, EX/INCLUDE    ###########################
+#########################################################################
 future: true
 plugins:
 - jekyll-avatar
