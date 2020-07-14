@@ -1,3 +1,11 @@
+# idea
+
+barbajekyll è un nuovo tema jeckyll con download click to tweet,
+
+
+- perfezionamento logica del sito, eliminazione file superflui, pulizia javascript
+- creare documentazione basata sulla logica usata nel config.yaml
+
 # Link utili
 
 - Jekyll Liquid Cheatsheet https://gist.github.com/antoniotrento/9a78b69c727e8c63498508098ec736b7
@@ -11,6 +19,7 @@
 
 - [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
 - [ ] creazione logica per scegliere l'icona social
+- [ ] capire bene il problema dei titoli delle pagine che rimane jekyllil
 - [ ] creazione logica di visualizzazione dinamica menu dal config.yaml
 - [ ] controllo dinamico documentazione dell'albero dei docs
     1. https://stackoverflow.com/questions/33613712/how-may-i-manually-sort-jekyll-pages-using-yaml
