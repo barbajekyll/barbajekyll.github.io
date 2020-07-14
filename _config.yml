@@ -37,7 +37,9 @@ google_site_verification:
 #########################################################################
 #################    MY THEME EDITING  ##################################
 #########################################################################
-CssTemplate:
+css:
+  default: main
+  blog: blog
 #########################################################################
 #################      END EDITING    ###################################
 #########################################################################
@@ -49,11 +51,11 @@ collections:
     permalink: "/:collection/:path/"
     output: true
   posts:
-    permalink: "/news/:year/:month/:day/:title/"
+    permalink: "/:title/" # PRIMA permalink: "/news/:year/:month/:day/:title/"
     output: true
-  tutorials:
-    permalink: "/:collection/:path/"
-    output: true
+#  tutorials:
+#    permalink: "/:collection/:path/"
+#    output: true
 defaults:
 - scope:
     path: _docs

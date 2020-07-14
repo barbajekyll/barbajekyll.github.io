@@ -22,12 +22,7 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 
 # TO DO
 
-- [ ] Capire come far funzionare jekyll-seo-tag-plugin per far popolare le pagine con titolo descrizione titolo twitter cards descrizione twitter cards e immagine con quelli della pagina
-  1. https://stackoverflow.com/questions/53638446/jekyll-seo-tag-doesnt-work-within-github-pages
-  2. https://jekyllrb.com/docs/step-by-step/03-front-matter/
-  3. https://stackoverflow.com/questions/27386169/change-site-url-to-localhost-during-jekyll-local-development/
-  4. https://stackoverflow.com/questions/31130120/defining-variable-configuration-in-config-yml-in-jekyll-powered-website
-  5.
+- [ ]
 - [ ] Aggiungere simpleform https://getsimpleform.com/ o https://formspree.io/ o http://blog.plataformatec.com.br/tag/simple_form/
 - [ ] Capire come integrare google forms per i sondaggi
 - [ ] Provare a mettere in privata la repository del sito in modo che non possa essere copiato
@@ -48,6 +43,11 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 - [ ] implementa ecommerce
 - [ ] implementa pagamenti in stripe
 - [ ] implementa wordpress in background su jekyll
+
+## TO DO SEO
+
+- [ ] Aggiungere tutti i titoli e descrizioni
+- [ ] Escludere tutte le pagine inutili dall'indicizzazione
 
 ## CODICE DA SVILUPPARE
 
@@ -72,6 +72,13 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
         - transitionTitle.innerHTML = next.container.dataset.barbaNamespace
         - https://github.com/barbajs/barba/issues/515
         - https://www.youtube.com/watch?v=ZPzFxm7DA7A&feature=youtu.be
+- [X] Capire come far funzionare jekyll-seo-tag-plugin per far popolare le pagine con titolo descrizione titolo twitter cards descrizione twitter cards e immagine con quelli della pagina
+    0. soluzione utilizzare in _config.yml title: "titolo" e nelle pagine title: "titolo pagina" usando le virgolette
+    1. https://stackoverflow.com/questions/53638446/jekyll-seo-tag-doesnt-work-within-github-pages
+    2. https://jekyllrb.com/docs/step-by-step/03-front-matter/
+    3. https://stackoverflow.com/questions/27386169/change-site-url-to-localhost-during-jekyll-local-development/
+    4. https://stackoverflow.com/questions/31130120/defining-variable-configuration-in-config-yml-in-jekyll-powered-website
+    5.
 
 ## REPO DA FORKARE PER E-COMMERCE
 
