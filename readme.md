@@ -102,6 +102,7 @@ https://github.com/mcin0244/jekyll-ecommerce-website
 ## Tutorials su plugin e strumenti
 
 1. [ ] https://blog.mastykarz.nl/improve-jekyll-seo/
+  - https://github.com/waldekmastykarz/blog.mastykarz.nl-jekyll-config/blob/99886c02ce250a47437b1f5b9bf9f375c3a7aa5f/_config.yml
 1. [ ] http://jekyll.github.io/jekyll-seo-tag/advanced-usage/
 
 ## Strumenti utili al repository
