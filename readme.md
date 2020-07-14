@@ -10,22 +10,24 @@
 # TO DO
 
 - [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
+- [ ] creazione logica per scegliere l'icona social
+- [ ] creazione logica di visualizzazione dinamica menu dal config.yaml
 - [ ] controllo dinamico documentazione dell'albero dei docs
-  1. https://stackoverflow.com/questions/33613712/how-may-i-manually-sort-jekyll-pages-using-yaml
-  2. impostare menu ed elenchi da https://github.com/barbajekyll/barbajekyll.github.io/tree/master/_data
+    1. https://stackoverflow.com/questions/33613712/how-may-i-manually-sort-jekyll-pages-using-yaml
+    2. impostare menu ed elenchi da https://github.com/barbajekyll/barbajekyll.github.io/tree/master/_data
 - [ ] Modificare il destinatarion del form di inserimento nella pagina /showcase/
-  1. il file js è in /theme/barba/components/showcase/Form.js e anche in file simili allinterno della cartella
+    1. il file js è in /theme/barba/components/showcase/Form.js e anche in file simili allinterno della cartella
 - [X] Capire come modificare la label della la transizione basica (mostra sempre il testo home dovunque si navighi)
-  1. https://www.google.com/search?sxsrf=ALeKk00xVUojTXeCuqN9b3ngzR_Sdwv4wg%3A1594490987838&ei=awAKX7nuMvLKrgSC_L-QBQ&q=javascript+ehide+scroll+bar&oq=javascript+ehide+scroll+bar&gs_lcp=CgZwc3ktYWIQAzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIICAAQDRAeEBMyCAgAEA0QHhATMgoIABANEAUQHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATOgcIABBHELADUMEZWM4cYIkeaAFwAHgAgAF5iAG4A5IBAzAuNJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwj5z7Xn5cXqAhVypYsKHQL-D1IQ4dUDCAw&uact=5
-  2. https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
-  3. In /theme/barba/source/_js/transitions/default.js viene applicata la label per il _layouts/default.html .transition sotto il footer, altri js in causa: route.js e ../app.js potrebbe anche derivare dal _layouts/jsbarbahead.html
-    - Attributi chiamati in causa
-    - container.dataset.barbaNamespace
-    - document.querySelector('.transition__title')
-    - querySelector
-    - transitionTitle.innerHTML = next.container.dataset.barbaNamespace
-    - https://github.com/barbajs/barba/issues/515
-    - https://www.youtube.com/watch?v=ZPzFxm7DA7A&feature=youtu.be
+    1. https://www.google.com/search?sxsrf=ALeKk00xVUojTXeCuqN9b3ngzR_Sdwv4wg%3A1594490987838&ei=awAKX7nuMvLKrgSC_L-QBQ&q=javascript+ehide+scroll+bar&oq=javascript+ehide+scroll+bar&gs_lcp=CgZwc3ktYWIQAzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIICAAQDRAeEBMyCAgAEA0QHhATMgoIABANEAUQHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATOgcIABBHELADUMEZWM4cYIkeaAFwAHgAgAF5iAG4A5IBAzAuNJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwj5z7Xn5cXqAhVypYsKHQL-D1IQ4dUDCAw&uact=5
+    2. https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
+    3. In /theme/barba/source/_js/transitions/default.js viene applicata la label per il _layouts/default.html .transition sotto il footer, altri js in causa: route.js e ../app.js potrebbe anche derivare dal _layouts/jsbarbahead.html
+        - Attributi chiamati in causa
+        - container.dataset.barbaNamespace
+        - document.querySelector('.transition__title')
+        - querySelector
+        - transitionTitle.innerHTML = next.container.dataset.barbaNamespace
+        - https://github.com/barbajs/barba/issues/515
+        - https://www.youtube.com/watch?v=ZPzFxm7DA7A&feature=youtu.be
 - [ ] implementare documentazione
 - [ ] implementare blog
 - [ ] implementa ecommerce
