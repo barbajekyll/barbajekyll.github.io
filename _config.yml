@@ -1,19 +1,28 @@
 ---
 version: 4.1.0
-name: Jekyll • Simple, blog-aware, static sites
-description: Transform your plain text into static websites and blogs
+name: Barbajekyll • Simple, barba.js transition, on jekyll sites
+description: Create badass jekyll site with smooth transitions
+# description: >  this means to ignore newlines until "show_excerpts:"
+# Write an awesome description for your new site here. You can edit this
+# line in _config.yml. It will appear in your document head meta (for
+# Google search results) and in your feed.xml site description.
 url: https://barbajekyll.github.io
 repository: https://github.com/barbajekyll/barbajekyll.github.io
 # baseurl: barbajekyll
 # source: ./barbajekyll
-timezone: America/Los_Angeles
-lang: en-US
+timezone: Europe/Rome
+lang: it-IT
+author:
+  name: Antonio Trento
+  email: lantoniotrento@gmail.com
+show_excerpts: false # set to true to show excerpts on the homepage
 twitter:
-  username: jekyllrb
+  username: barbajekyll
+  card: summary_large_image
 logo: "/img/logo-2x.png"
-google_analytics_id:
+google_analytics_id: UA-172632574-1
 google_analytics_name_id:
-google_tag_id: UA-86331249-1
+google_tag_id: UA-172632574-1 # tag manager for now GTM-KRPZDXN
 google_site_verification:
 collections:
   docs:
@@ -45,6 +54,44 @@ defaults:
     path: ''
   values:
     image: "/img/jekyll-og.png"
+# generate social links in footer
+social_links:
+  twitter: barbajekyll
+  github:  branajekyll
+  # devto: jekyll
+  # dribbble: jekyll
+  # facebook: jekyll
+  # flickr:   jekyll
+  # instagram: jekyll
+  # linkedin: jekyll
+  # pinterest: jekyll
+  # youtube: jekyll
+  # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+  # youtube_channel_name: CloudCannon
+  # telegram: jekyll
+  # googleplus: +jekyll
+  # microdotblog: jekyll
+  # keybase: jekyll
+
+  # Mastodon instances
+  # mastodon:
+  # - username: jekyll
+  #   instance: example.com
+  # - username: jekyll2
+  #   instance: example.com
+
+  # GitLab instances
+  # gitlab:
+  # - username: jekyll
+  #   instance: example.com
+  # - username: jekyll2
+  #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md<!-- Global site tag (gtag.js) - Google Analytics -->
+
 future: true
 plugins:
 - jekyll-avatar
