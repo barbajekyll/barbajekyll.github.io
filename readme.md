@@ -7,7 +7,7 @@
 - https://github.com/jekyll/jekyll/issues/881
 - https://stackoverflow.com/questions/53923035/jekyll-check-if-page-belongs-to-a-collection
 
-# To do
+# TO DO
 
 - [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
 - [ ] controllo dinamico documentazione dell'albero dei docs
