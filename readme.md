@@ -2,6 +2,11 @@
 
 barbajekyll è un nuovo tema jeckyll con download click to tweet,
 
+Esempi espansioni
+
+Pack di animazioni hentai famosi
+Transizioni da una pagina all’altra
+Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema premium con molti blocchi pre costruiti e integrazione email marketing (cercare piattaforma di email marketing per reseller) e soluzione buy white label come prodotto night tiket 
 
 - perfezionamento logica del sito, eliminazione file superflui, pulizia javascript
 - creare documentazione basata sulla logica usata nel config.yaml
