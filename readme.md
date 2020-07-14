@@ -47,6 +47,7 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 - [ ] implementare documentazione
 - [ ] implementare blog
 - [ ] implementa ecommerce
+- [ ] implementa pagamenti in stripe 
 - [ ] implementa wordpress in background su jekyll
 
 
