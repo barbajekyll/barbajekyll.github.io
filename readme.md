@@ -27,7 +27,7 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
   2. https://jekyllrb.com/docs/step-by-step/03-front-matter/
   3. https://stackoverflow.com/questions/27386169/change-site-url-to-localhost-during-jekyll-local-development/
   4. https://stackoverflow.com/questions/31130120/defining-variable-configuration-in-config-yml-in-jekyll-powered-website
-  5. 
+  5.
 - [ ] Aggiungere simpleform https://getsimpleform.com/ o https://formspree.io/ o http://blog.plataformatec.com.br/tag/simple_form/
 - [ ] Capire come integrare google forms per i sondaggi
 - [ ] Provare a mettere in privata la repository del sito in modo che non possa essere copiato
@@ -109,12 +109,12 @@ https://emojipedia.org/
 
 ## Tutorials
 
-- Jekyll Liquid Cheatsheet https://gist.github.com/antoniotrento/9a78b69c727e8c63498508098ec736b7
 - https://jekyllrb.com/docs/configuration/front-matter-defaults/
 - https://jekyllrb.com/docs/collections/
 - https://learn-the-web.algonquindesign.ca/topics/jekyll/
 - https://github.com/jekyll/jekyll/issues/881
 - https://stackoverflow.com/questions/53923035/jekyll-check-if-page-belongs-to-a-collection
+- https://developer.akamai.com/blog/2017/11/02/automatic-purge-your-static-website
 
 ## Tutorials su plugin e strumenti
 
@@ -125,6 +125,7 @@ https://emojipedia.org/
 ## Strumenti utili al repository
 
 1. [ ] https://azure.microsoft.com/it-it/pricing/details/search/
+2. [ ] Jekyll Liquid Cheatsheet https://gist.github.com/antoniotrento/9a78b69c727e8c63498508098ec736b7
 
 ## Organizzazioni utenti girhub rilevanti per jekyll e tecnologie intorno
 
