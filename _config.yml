@@ -1,6 +1,7 @@
 ---
 version: 4.1.0
 name: Barbajekyll • Simple, barba.js transition, on jekyll sites
+title: {{ page.title }}
 description: Create badass jekyll site with smooth transitions
 # description: >  this means to ignore newlines until "show_excerpts:"
 # Write an awesome description for your new site here. You can edit this
