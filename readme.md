@@ -22,6 +22,7 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 
 # TO DO
 
+- [ ] Capire come far funzionare jekyll-seo-tag-plugin per far popolare le pagine con titolo descrizione titolo twitter cards descrizione twitter cards e immagine con quelli della pagina
 - [ ] Aggiungere simpleform https://getsimpleform.com/ o https://formspree.io/ o http://blog.plataformatec.com.br/tag/simple_form/
 - [ ] Capire come integrare google forms per i sondaggi
 - [ ] Provare a mettere in privata la repository del sito in modo che non possa essere copiato

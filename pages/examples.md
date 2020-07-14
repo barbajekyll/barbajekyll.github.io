@@ -1,8 +1,8 @@
 ---
 layout: default
 overview: true
-title: "Examples of barbajekyll implementations"
-description: "with barbajekyll you can quckly run a jekyll static site with great animation provided by barbajs"
+title: Examples of barbajekyll implementations
+description: With barbajekyll you can quckly run a jekyll static site with great animation provided by barbajs
 permalink: /examples/
 ---
 
