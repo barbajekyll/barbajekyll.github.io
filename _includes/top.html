@@ -5,11 +5,7 @@
   {% feed_meta %}
   <link type="application/atom+xml" rel="alternate" href="{{ 'feed/release.xml' | relative_url }}" title="BarbaJeky releases posts" />
   <link rel="alternate" type="application/atom+xml" title="Recent commits to Jekyll’s master branch" href="{{ site.repository }}/commits/master.atom">
-  {% if page.css %}
-  <link rel="stylesheet" href="{{ site.url }}/css/{{page.css}}.css" type="text/css" media="all">
-  {% else %}
   <link rel="stylesheet" href="{{ 'css/barba.css' | relative_url }}" type="text/css" media="all">
-  {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{{ 'favicon.ico' | relative_url }}">
   {% seo %}
@@ -20,3 +16,15 @@
   <script src="/js/respond.min.js"></script>
   <![endif]-->
 </head>
+
+
+
+
+
+<!--{% if page.css %}
+<link rel="stylesheet" href="{{ site.url }}/css/{{page.css}}.css" type="text/css" media="all">
+{% elseif site.css.default %}
+<link rel="stylesheet" href="{{ 'css/barba.css' | relative_url }}" type="text/css" media="all">
+{% else %}
+<link rel="stylesheet" href="{{ site.url }}/css/{{page.css}}.css{{ 'css/barba.css' | relative_url }}" type="text/css" media="all">
+{% endif %}-->
