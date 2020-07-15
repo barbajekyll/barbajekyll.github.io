@@ -22,7 +22,7 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 
 # TO DO
 
-- [ ] integrare PayPal e stripe 
+- [ ] integrare PayPal e stripe
 - [ ] Aggiungere simpleform https://getsimpleform.com/ o https://formspree.io/ o http://blog.plataformatec.com.br/tag/simple_form/
 - [ ] Capire come integrare google forms per i sondaggi
 - [ ] Provare a mettere in privata la repository del sito in modo che non possa essere copiato
@@ -169,7 +169,8 @@ https://emojipedia.org/
 ## GSAP ANIMAZIONI JAVASCRIPT
 
 - https://greensock.com/forums/topic/22491-gsap3-target-object-not-found/
-
+- https://codepen.io/GreenSock/pens
+-
 ## WEBPACK UNDERSTANDING
 
 - https://www.google.com/search?q=show+address+where+webpack+take+data&oq=show+address+where+webpack+take+data&aqs=chrome..69i57j33.24133j0j7&sourceid=chrome&ie=UTF-8
