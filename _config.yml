@@ -14,7 +14,7 @@ config:
   dev:
     url: http://localhost:4000
   prod:
-    url: http://requestly.github.io/blog
+    url: https://barbajekyll.github.io
 
 url: https://barbajekyll.github.io
 repository: https://github.com/barbajekyll/barbajekyll.github.io
