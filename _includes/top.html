@@ -5,7 +5,7 @@
   {% feed_meta %}
   <link type="application/atom+xml" rel="alternate" href="{{ 'feed/release.xml' | relative_url }}" title="BarbaJeky releases posts" />
   <link rel="alternate" type="application/atom+xml" title="Recent commits to Jekyll’s master branch" href="{{ site.repository }}/commits/master.atom">
-  <link rel="stylesheet" href="{{ 'css/barba.css' | relative_url }}" type="text/css" media="all">
+  <link rel="stylesheet" href="_{{ 'css/barba.css' | absolute_url }}{{ site.css.default }}.css" type="text/css" media="all">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{{ 'favicon.ico' | relative_url }}">
   {% seo %}
