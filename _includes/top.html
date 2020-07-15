@@ -7,10 +7,8 @@
   <link rel="alternate" type="application/atom+xml" title="Recent commits to Jekyll’s master branch" href="{{ site.repository }}/commits/master.atom">
   {% if page.css %}
   <link rel="stylesheet" href="{{ site.url }}/css/{{page.css}}.css" type="text/css" media="all">
-  {% elseif site.css.default %}
-  {% if  %}<link rel="stylesheet" href="{{ 'css/barba.css' | relative_url }}" type="text/css" media="all">{% endif %}
-  {% else %}
-  <link rel="stylesheet" href="{{ site.url }}/css/{{page.css}}.css{{ 'css/barba.css' | relative_url }}" type="text/css" media="all">
+
+  <link rel="stylesheet" href="{{ 'css/barba.css' | relative_url }}" type="text/css" media="all">
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{{ 'favicon.ico' | relative_url }}">
