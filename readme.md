@@ -26,7 +26,7 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 - [ ] Aggiungere simpleform https://getsimpleform.com/ o https://formspree.io/ o http://blog.plataformatec.com.br/tag/simple_form/
 - [ ] Capire come integrare google forms per i sondaggi
 - [ ] Provare a mettere in privata la repository del sito in modo che non possa essere copiato
-- [ ] in _scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs */
+- [ ] in scss/main.scss -> .transition { position: fixed; /* crea il problema della scrollbar in homepage quando faccio mousover da una lettera all'altra del logo barbajs
 - [ ] creazione logica per scegliere l'icona social
 - [ ] creare logica per sfruttare config.yml come configurazione voci di menu, navigazione docs, titoli seo delle pagine, caricamento dinamico CSS nelle pagine
 - [ ] capire bene il problema dei titoli delle pagine che rimane jekyllil
@@ -64,7 +64,7 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
 - [X] Capire come modificare la label della la transizione basica (mostra sempre il testo home dovunque si navighi)
     1. https://www.google.com/search?sxsrf=ALeKk00xVUojTXeCuqN9b3ngzR_Sdwv4wg%3A1594490987838&ei=awAKX7nuMvLKrgSC_L-QBQ&q=javascript+ehide+scroll+bar&oq=javascript+ehide+scroll+bar&gs_lcp=CgZwc3ktYWIQAzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIICAAQDRAeEBMyCAgAEA0QHhATMgoIABANEAUQHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATMgoIABAIEA0QHhATOgcIABBHELADUMEZWM4cYIkeaAFwAHgAgAF5iAG4A5IBAzAuNJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwj5z7Xn5cXqAhVypYsKHQL-D1IQ4dUDCAw&uact=5
     2. https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
-    3. In /theme/barba/source/_js/transitions/default.js viene applicata la label per il _layouts/default.html .transition sotto il footer, altri js in causa: route.js e ../app.js potrebbe anche derivare dal _layouts/jsbarbahead.html
+    3. In /theme/barba/source/_js/transitions/default.js -->__ viene applicata la label per il _layouts/default.html -->__ .transition sotto il footer, altri js in causa: route.js e ../app.js potrebbe anche derivare dal _layouts/jsbarbahead.html -->__
         - Attributi chiamati in causa
         - container.dataset.barbaNamespace
         - document.querySelector('.transition__title')
@@ -73,7 +73,7 @@ Modal di apertura bottoni, plugin, temi, modello pagamento ricorrente per tema p
         - https://github.com/barbajs/barba/issues/515
         - https://www.youtube.com/watch?v=ZPzFxm7DA7A&feature=youtu.be
 - [X] Capire come far funzionare jekyll-seo-tag-plugin per far popolare le pagine con titolo descrizione titolo twitter cards descrizione twitter cards e immagine con quelli della pagina
-    0. soluzione utilizzare in _config.yml title: "titolo" e nelle pagine title: "titolo pagina" usando le virgolette
+    0. soluzione utilizzare in _config.yml -->__ title: "titolo" e nelle pagine title: "titolo pagina" usando le virgolette
     1. https://stackoverflow.com/questions/53638446/jekyll-seo-tag-doesnt-work-within-github-pages
     2. https://jekyllrb.com/docs/step-by-step/03-front-matter/
     3. https://stackoverflow.com/questions/27386169/change-site-url-to-localhost-during-jekyll-local-development/
@@ -164,13 +164,15 @@ https://emojipedia.org/
 - https://stackoverflow.com/questions/2934787/view-list-of-all-javascript-variables-in-google-chrome-console#:~:text=In%20Firebug%2C%20the%20DOM%20tab,object%20you%20want%20to%20explore.
 - https://www.google.com/search?sxsrf=ALeKk014b6F2Pb_SfUXZhXZZosMwKnDzwQ%3A1594495979827&ei=6xMKX9-NMr2BhbIPrc66sAY&q=show+address+where+javascript+take+a+vaue&oq=show+address+where+javascript+take+a+vaue&gs_lcp=CgZwc3ktYWIQAzIHCCEQChCgATIECCEQFToHCAAQRxCwAzoLCC4QsQMQgwEQkwI6CAgAELEDEIMBOggILhCxAxCDAToFCAAQsQM6BAgAEEM6AggAOgQIIxAnOgcILhAUEIcCOgUILhCxAzoHCAAQsQMQQzoCCC46BwgAEBQQhwI6BwguEAoQywE6BQgAEMsBOgUILhDLAToICC4QywEQkwI6BggAEBYQHjoICAAQFhAKEB46CAghEBYQHRAeOgUIIRCgAVD7iS5Y3tEvYPzTL2gCcAB4BoAB2xSIAbuNAZIBEDEuMjcuMy40LjIuMy45LTSYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwifr-Sz-MXqAhW9QEEAHS2nDmYQ4dUDCAw&uact=5
 - https://javascript.info/keys-values-entries
--
+- https://www.shabaniddrisu.com
 
 ## GSAP ANIMAZIONI JAVASCRIPT
 
 - https://greensock.com/forums/topic/22491-gsap3-target-object-not-found/
 - https://codepen.io/GreenSock/pens
--
+- https://greensock.com/get-started
+- https://patrickheng.com/ inspiration stiky element
+
 ## WEBPACK UNDERSTANDING
 
 - https://www.google.com/search?q=show+address+where+webpack+take+data&oq=show+address+where+webpack+take+data&aqs=chrome..69i57j33.24133j0j7&sourceid=chrome&ie=UTF-8
