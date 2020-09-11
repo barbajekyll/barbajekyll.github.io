@@ -51,11 +51,11 @@ collections:
     permalink: "/:collection/:path/"
     output: true
   posts:
-    permalink: "/:title/" # PRIMA permalink: "/news/:year/:month/:day/:title/"
+    permalink: "/news/:year/:month/:day/:title/" # PRIMA permalink: "/news/:year/:month/:day/:title/"
     output: true
-#  tutorials:
-#    permalink: "/:collection/:path/"
-#    output: true
+  tutorials:
+    permalink: "/:collection/:path/"
+    output: true
 defaults:
 - scope:
     path: _docs
