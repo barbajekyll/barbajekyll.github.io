@@ -46,36 +46,36 @@ css: # the css templates in (css/namefile.css [is in scss format but when declar
 #########################################################################
 #################      COLLECTIONS    ###################################
 #########################################################################
-collections:
-  docs:
-    permalink: "/:collection/:path/"
-    output: true
-  posts:
-    permalink: "/:title/" # PRIMA permalink: "/news/:year/:month/:day/:title/"
-    output: true
-#  tutorials:
+#collections:
+#  docs:
 #    permalink: "/:collection/:path/"
 #    output: true
-defaults:
-- scope:
-    path: _docs
-    type: docs
-  values:
-    layout: default
-- scope:
-    path: _posts
-    type: posts
-  values:
-    layout: news_item
-- scope:
-    path: _tutorials
-    type: tutorials
-  values:
-    layout: tutorials
-- scope:
-    path: ''
-  values:
-    image: "/img/jekyll-og.png"
+#  posts:
+#    permalink: "/:title/" # PRIMA permalink: "/news/:year/:month/:day/:title/"
+#    output: true
+##  tutorials:
+##    permalink: "/:collection/:path/"
+##    output: true
+#defaults:
+#- scope:
+#    path: _docs
+#    type: docs
+#  values:
+#    layout: default
+#- scope:
+#    path: _posts
+#    type: posts
+#  values:
+#    layout: news_item
+#- scope:
+#    path: _tutorials
+#    type: tutorials
+#  values:
+#    layout: tutorials
+#- scope:
+#    path: ''
+#  values:
+#    image: "/img/jekyll-og.png"
 # generate social links in footer
 social_links:
   twitter: barbajekyll
