@@ -21,7 +21,7 @@ repository: https://github.com/barbajekyll/barbajekyll.github.io
 # baseurl: barbajekyll
 # source: ./barbajekyll
 timezone: Europe/Rome
-lang: it-IT
+lang: en-US
 author:
   name: Antonio Trento
   email: lantoniotrento@gmail.com
