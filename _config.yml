@@ -30,9 +30,9 @@ twitter:
   username: barbajekyll
   card: summary_large_image
 logo: "/img/logo-2x.png"
-google_analytics_id: UA-172632574-1
+google_analytics_id:
 google_analytics_name_id:
-google_tag_id: GTM-KRPZDXN
+google_tag_id: 
 google_site_verification:
 #########################################################################
 #################    MY THEME EDITING  ##################################
